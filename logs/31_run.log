@@ -1,0 +1,51 @@
+sales rows by year/service: service_type  Bundled  Delivery  Energy
+year                                   
+2019             3392        76     885
+2020             1701        76     882
+2021             1674        76     874
+2022             1690        76     880
+2023             1742        76     826
+2024             1758        73     807
+2025             1800        74     813
+county-name match: 0.9987 of unique (state,county) names (3144); 0.9990 of rows
+unmatched:      state                     county
+124     AK  Prince of Wales Ketchikan
+1476    AK        Wrangell Petersburg
+1501    AK             Valdez Cordova
+2626    AK             Not Applicable
+
+==== REPORT
+utility-state-year rows: 18977 by year: {2019: 4182, 2020: 2485, 2021: 2461, 2022: 2476, 2023: 2446, 2024: 2453, 2025: 2474}
+            count       mean       std  ...        50%        75%        max
+price_com  1499.0  12.981952  4.978145  ...  12.479300  14.561430  53.473167
+price_ind  1217.0   9.929479  4.704673  ...   8.894996  10.925234  54.269972
+
+[2 rows x 8 columns]
+US sales-weighted price latest (bundled): com 12.37 ind 8.01
+county-year rows: 21953 counties latest year: 3134
+                   count         mean  ...          75%          max
+year              3134.0  2025.000000  ...  2025.000000  2025.000000
+price_com_cty     3111.0    13.006387  ...    14.360698    53.473167
+price_com_cty_w   3111.0    12.804807  ...    14.205417    53.473167
+n_util_com_price  3134.0     2.715699  ...     4.000000     9.000000
+price_ind_cty     3090.0     9.565250  ...    10.099292    54.269972
+price_ind_cty_w   3090.0     8.966642  ...     9.217633    54.269972
+n_util_ind_price  3134.0     2.589024  ...     3.000000     8.000000
+n_utilities       3134.0     3.761966  ...     5.000000    15.000000
+
+[8 rows x 8 columns]
+facility match: {'matched_2025': 3817, 'no_utility_code': 2661, 'id_only_in_service_territory': 300, 'matched_earlier_year': 227, 'matched_no_ind_price': 81, 'id_in_861_sales_other_state': 37, 'id_not_in_861': 9}
+of facilities with UTILITY_CODE (4471): utility-state found 0.923; ind price any year 0.904; ind price 2025 0.854
+price_ind_year: {2025.0: 3817, 2024.0: 163, 2023.0: 60, 2019.0: 2, 2020.0: 2}
+territory-only examples: {('44372', 'TX'): 236, ('20404', 'TX'): 33, ('8901', 'TX'): 27, ('44372', 'AZ'): 3, ('3278', 'TX'): 1}
+matched_no_ind_price examples: {'New York Power Authority': 21, 'Boone County Rural EMC': 11, 'Bartlett Electric Coop, Inc': 10, 'City of East Point - (GA)': 7, 'City of Mesa - (AZ)': 5, 'Potomac Electric Power Co': 5, 'Orlando Utilities Comm': 5, 'Grayson-Collin Elec Coop, Inc': 5, 'Lehi City Corporation': 5, 'City of Pasadena - (CA)': 1}
+other-state examples: {('9273', 'OH'): 12, ('19876', 'SC'): 5, ('14006', 'KY'): 4, ('6342', 'MD'): 4, ('11018', 'OH'): 4, ('19436', 'IL'): 3, ('14624', 'IL'): 1, ('13780', 'MN'): 1, ('17539', 'MO'): 1, ('57483', 'MO'): 1}
+count    4044.000000
+mean        9.920852
+std         4.808899
+min         3.000021
+25%         7.767733
+50%         8.529327
+75%         9.927178
+max        34.584920
+Name: price_ind_util, dtype: float64

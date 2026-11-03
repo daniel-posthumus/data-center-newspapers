@@ -1,0 +1,69 @@
+F1 sample: 48624 county-years; mean wh_any_new 0.145; mean wh_net_new 0.294
+
+F1 wh_net_new on q_pc10k_l1:
+      term (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_pc10k_l1        -0.2704* (0.1403)  -0.1112 (0.0690)    -0.0989 (0.0724)                -0.0066 (0.0897)
+         N                    48624             48624               48035                           32134
+
+F1 wh_net_new on q_zero_l1:
+     term (2) +demog+RUCC, year FE   (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_zero_l1      -0.6096*** (0.1203) -0.4054*** (0.0835) -0.3116*** (0.0824)                -0.0107 (0.1026)
+        N                    48624               48624               48035                           32134
+
+F1 wh_any_new on q_pc10k_l1:
+      term (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_pc10k_l1          0.0018 (0.0022) 0.0037** (0.0018)   0.0035** (0.0017)                -0.0012 (0.0012)
+         N                    48624             48624               48624                           48624
+
+F1 wh_any_new on q_zero_l1:
+     term (2) +demog+RUCC, year FE   (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_zero_l1       -0.0218** (0.0087) -0.0206*** (0.0068)    -0.0097 (0.0062)                 0.0008 (0.0068)
+        N                    48624               48624               48624                           48624
+
+F2 county panel (outcome years 2010-2020, news at t+5): 33429 county-years; announcements in these years: 45; county-years with any: 42
+F2 campus level: campuses announced <=2020 with news at t+5: 47; failed among them: 0
+F2 campus-level placebo NOT RUN: fewer than 10 failed campuses announced <= 2020.
+F2:
+            outcome  regressor                spec      coef       se        p     n
+any_ann (2010-2020) q_pc10k_f5   (3) +fundamentals  0.000036 0.000095 0.701256 33429
+any_ann (2010-2020) q_pc10k_f5 (4) state x year FE  0.000121 0.000094 0.204799 33429
+any_ann (2010-2020) q_pc10k_l1   (3) +fundamentals -0.000043 0.000111 0.701912 33429
+any_ann (2010-2020) q_pc10k_l1 (4) state x year FE  0.000059 0.000101 0.565310 33429
+any_ann (2010-2020)  q_zero_f5   (3) +fundamentals  0.000126 0.000333 0.707473 33429
+any_ann (2010-2020)  q_zero_f5 (4) state x year FE -0.000128 0.000440 0.771835 33429
+any_ann (2010-2020)  q_zero_l1   (3) +fundamentals -0.000226 0.000300 0.454696 33429
+any_ann (2010-2020)  q_zero_l1 (4) state x year FE -0.000556 0.000520 0.290793 33429
+F3 key drops:
+         model       term dropped      coef       se        p     n
+C5 any_ann LPM q_pc10k_l1    none  0.003020 0.001101 0.008561 51663
+C5 any_ann LPM q_pc10k_l1      VA  0.002966 0.001098 0.009561 49997
+C5 any_ann LPM q_pc10k_l1      TX  0.002293 0.000810 0.006803 47447
+C5 any_ann LPM q_pc10k_l1   VA+TX  0.002231 0.000800 0.007653 45781
+C5 any_ann LPM  q_zero_l1    none -0.009065 0.004334 0.041785 51663
+C5 any_ann LPM  q_zero_l1      VA -0.010167 0.004347 0.023634 49997
+C5 any_ann LPM  q_zero_l1      TX -0.005165 0.002579 0.050966 47447
+C5 any_ann LPM  q_zero_l1   VA+TX -0.006186 0.002535 0.018576 45781
+ C5 n_ann PPML q_pc10k_l1    none -0.067384 0.163364 0.679990  2953
+ C5 n_ann PPML q_pc10k_l1      VA -0.096717 0.175775 0.582159  2689
+ C5 n_ann PPML q_pc10k_l1      TX -0.996609 0.829616 0.229639  2084
+ C5 n_ann PPML q_pc10k_l1   VA+TX -1.704258 0.883353 0.053693  1820
+ C5 n_ann PPML  q_zero_l1    none -0.195980 0.252561 0.437767  2953
+ C5 n_ann PPML  q_zero_l1      VA  0.022885 0.457980 0.960147  2689
+ C5 n_ann PPML  q_zero_l1      TX -0.147505 0.306045 0.629826  2084
+ C5 n_ann PPML  q_zero_l1   VA+TX  0.227492 0.630324 0.718165  1820
+ D4 failed LPM    q_pc10k    none -0.035470 0.027162 0.192297   970
+ D4 failed LPM    q_pc10k      VA -0.020003 0.024293 0.410762   809
+ D4 failed LPM    q_pc10k      TX -0.124925 0.075264 0.097849   783
+ D4 failed LPM    q_pc10k   VA+TX -0.080554 0.085711 0.347999   622
+ D4 failed LPM     q_zero    none  0.028382 0.036095 0.432121   970
+ D4 failed LPM     q_zero      VA  0.025765 0.041723 0.537236   809
+ D4 failed LPM     q_zero      TX  0.033674 0.041597 0.418763   783
+ D4 failed LPM     q_zero   VA+TX  0.028682 0.054217 0.597155   622
+F3 range over single-state drops:
+         model       term  min_coef  max_coef  share_p_lt_05  n_states
+C5 any_ann LPM q_pc10k_l1  0.002293  0.003697        1.00000        49
+C5 any_ann LPM  q_zero_l1 -0.010833 -0.005165        0.77551        49
+ C5 n_ann PPML q_pc10k_l1 -0.996609  0.018837        0.00000        49
+ C5 n_ann PPML  q_zero_l1 -0.341374  0.022885        0.00000        49
+ D4 failed LPM    q_pc10k -0.124925 -0.020003        0.00000        46
+ D4 failed LPM     q_zero  0.017435  0.045938        0.00000        46

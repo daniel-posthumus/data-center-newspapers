@@ -1,0 +1,3 @@
+term,(1) bivariate,"(2) +demog+RUCC, year FE",(3) +fundamentals,(4) state x year FE,(5) county FE + state x year FE
+q_zero_l1,-0.3010 (0.2389),-0.0376 (0.1852),0.1352 (0.1563),-0.0630 (0.1613),-0.1960 (0.2526)
+N,51663,45585,45585,15714,2953

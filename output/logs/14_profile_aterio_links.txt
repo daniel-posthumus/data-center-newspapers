@@ -1,0 +1,63 @@
+Aterio link profile 2026-11-03 — US facilities: 7132, campuses: 2425
+facility share with PROJECT_PERMIT_URL: 0.352; campus share: 0.211
+facility share with DATASHEET_URL: 0.909; campus share: 0.902
+  TX: facilities 1186, share permit 0.410; campuses 340, share 0.309
+  VA: facilities 1178, share permit 0.424; campuses 319, share 0.332
+permit share by stage:
+                 stage  n_fac  fac_share_permit  n_campus  campus_share_permit
+                Active   2026          0.071076      1331             0.040571
+          Announcement   3631          0.494079       760             0.440789
+             Cancelled     19          0.052632        10             0.100000
+          Construction    766          0.533943       165             0.521212
+               Delayed     84          0.380952        14             0.642857
+             Land Bank     54          0.037037        47             0.042553
+Not Approved/Withdrawn    552          0.235507        98             0.255102
+PROJECT_PERMIT_URL: 3678 URLs, 311 domains
+DATASHEET_URL: 10921 URLs, 1070 domains
+datasheet URL type shares (>=1 URL of type):
+                       type  share_all_us_facilities  share_facilities_with_datasheet  share_all_us_campuses  n_urls
+               company_site                 0.372126                         0.409189               0.440000    3027
+          government_agency                 0.180314                         0.198273               0.115052    1484
+                 local_news                 0.252384                         0.277521               0.143093    2231
+    national_or_trade_press                 0.111189                         0.122263               0.063093     881
+                      other                 0.227987                         0.250694               0.280000    1897
+         press_release_wire                 0.047112                         0.051804               0.023505     395
+    regional_business_press                 0.061273                         0.067376               0.052784     484
+social_video_other_platform                 0.058469                         0.064292               0.032577     522
+facilities with >=1 local-news datasheet URL: 1800 / 7132 = 0.252
+campuses with >=1 local-news datasheet URL: 347 / 2425 = 0.143
+facilities with >=1 local-news OR regional-business-press URL: 0.302
+  TX: facility share with local-news datasheet URL 0.213
+  VA: facility share with local-news datasheet URL 0.168
+distinct domains classified local_news: 253 (see aterio_links_local_news_domains.csv for human check)
+top 'other' datasheet domains (unclassified): - https:137, msbglobalservices.com:97, pecva.org:53, homercityredevelopment.com:25, dcblox.com:24, dmkprojects.com:24, edgecore.com:23, protectpwc.org:23, richmondnc.com:20, iepwr.com:20, transitionequity.com:16, info.gocologix.com:15, projectsaltworks.com:15, logistixpg.com:14, neohioprojectinfo.com:14, ussignal.com:13, novva.com:12, about.fb.com:12, firstlight.net:12, engineering.fb.com:12, pointonecorp.com:12, vermaland.com:11, dartpoints.com:11, - initial filing:11, evocative.com:10, lightedge.com:10, hut8.com:10, theelectricgf.com:10, vimeo.com:10, lancium.com:10, esearch.shackelfordcad.com:10, dahlgrenwest.com:10, blog.google:9, cologix.com:9, cms2.revize.com:9, cowetaprojectsail.com:9, maconmelody.com:9, aol.com:9, www2.ljworld.com:9, mytarborotoday.com:9
+TX permit URLs: 804 URLs on 486 facilities / 105 campuses
+  agenda/minutes-like URLs: 228 on 169 facilities / 28 campuses
+  by matched keyword: {'destinyhosted': 52, 'agenda': 38, 'meeting': 31, 'civicclerk': 27, 'granicus': 25, 'minutes': 21, 'iqm2': 18, 'legistar': 12, 'civicweb': 4}
+  TX permit top domains:
+                                       domain  n_urls  n_facilities  n_campuses  n_agenda_like
+                               tceq.texas.gov     192           192          12              0
+                               tdlr.texas.gov     121           104          54              0
+                                      nrc.gov      44            44           1              0
+         hoodcountytx.documents-on-demand.com      80            42           6             21
+                 cohoodtxus-my.sharepoint.com      32            32           1             32
+                       records.tceq.texas.gov      32            28           9              0
+                     public.destinyhosted.com      32            27           6             32
+                 assets.comptroller.texas.gov      23            23           2              0
+                   somervellcountytx.iqm2.com      18            18           1             18
+                            destinyhosted.com      20            16           3             20
+                   cameron.tx.publicsearch.us      16            16           1              0
+                       guadalupe.granicus.com      13            13           2             13
+   granicus-aasmp-peak-files.s3.amazonaws.com      12            12           1             12
+                       datacenters.atmeta.com      11            11           1              0
+         wichitafallstx.portal.civicclerk.com       9             9           1              9
+                    newtools.cira.state.tx.us       8             8           2              3
+                    fortworthgov.legistar.com       6             6           2              6
+mccmeetingspublic.blob.core.usgovcloudapi.net      24             6           1             24
+                                sanangelo.gov       6             6           1              0
+               taylortx.portal.civicclerk.com       6             6           1              6
+                           co.armstrong.tx.us      24             6           1              0
+             civicclerk.blob.core.windows.net       6             6           1              6
+                             lancaster-tx.com       4             4           1              0
+                       storage.googleapis.com       4             4           1              4
+                venustx.portal.civicclerk.com       4             4           1              4

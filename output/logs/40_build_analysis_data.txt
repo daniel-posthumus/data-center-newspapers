@@ -1,0 +1,65 @@
+ACS 2017-21: rows in 3143, harmonized 3143, dropped 0; 2020 counties with non-missing pop_acs: 3143 of 3143
+RUCC: counties with rucc 3143 (CT filled from RUCC 2013: 0)
+pres 2016: rows in 3113, harmonized 3112, dropped 1; 2020 counties with non-missing rv2016: 3112 of 3143
+pres 2020: rows in 3113, harmonized 3112, dropped 1; 2020 counties with non-missing rv2020: 3112 of 3143
+pres 2024: rows in 3113, harmonized 3112, dropped 1; 2020 counties with non-missing rv2024: 3112 of 3143
+Census of Governments: dropping 9 CT planning-region rows (legacy rows present)
+Census of Governments: rows in 3138, harmonized 3138, dropped 0; 2020 counties with non-missing n_general_purpose: 3138 of 3143
+FCC broadcast: rows in 3143, harmonized 3143, dropped 0; 2020 counties with non-missing n_tv_full: 3143 of 3143
+grid: rows in 3143, harmonized 3143, dropped 0; 2020 counties with non-missing n_subst_230kv: 3143 of 3143
+electricity price year used: 2025
+EIA-861 county price: rows in 3134, harmonized 3134, dropped 0; 2020 counties with non-missing price_ind_cty: 3090 of 3143
+NASS land value 2022: rows in 3078, harmonized 3077, dropped 1; 2020 counties with non-missing land_value_per_acre: 3071 of 3143
+Aqueduct county: rows in 3143, harmonized 3143, dropped 0; 2020 counties with non-missing bws_raw_cty: 3134 of 3143
+broadband: rows in 3143, harmonized 3143, dropped 0; 2020 counties with non-missing share_pop_100_10_terr: 3143 of 3143
+county controls missingness:
+             variable  n_missing
+                 fips          0
+                state          0
+              pop_acs          0
+           aland_sqmi          0
+        med_hh_income          1
+            sh_65plus          0
+           sh_ba_plus          0
+          sh_white_nh          0
+              density          0
+          log_density          0
+           log_income          1
+                 rucc          0
+                  uic          0
+                metro          0
+             rucc2013          4
+            rural_grp          0
+       rep_share_2016         31
+       rep_share_2020         31
+       rep_share_2024         31
+    n_general_purpose          0
+          n_municipal          0
+           n_township          0
+   n_special_district          0
+          govs_per10k          0
+            n_tv_full          0
+         n_radio_full          0
+        n_subst_230kv          0
+          n_subst_all          0
+       km_lines_345kv          0
+       km_lines_230kv          0
+       log1p_subst230          0
+          log1p_km345          0
+        price_ind_cty         53
+        price_com_cty         32
+  land_value_per_acre         72
+       log_land_value         72
+          bws_raw_cty          9
+share_pop_100_10_terr          0
+  share_pop_25_3_terr          0
+      share_pop_fiber          0
+              pop_477          0
+dated campuses: 1066; announced before 2010 (outside panel): 2
+county-year panel: 53431 rows; announcements in panel: 1064; counties ever announcing: 469 of 3143
+facility_grid.parquet: campuses (via first building) with dist_km_subst_230kv: 2423 of 2425
+facility_water.parquet: campuses (via first building) with bws_raw: 2420 of 2425
+facility_elec_price.parquet: campuses (via first building) with price_ind_util: 1561 of 2425
+dist_km_subst_230kv: set to missing for 2 campuses with distance > 500 km (AK/HI)
+dist_km_line_345kv: set to missing for 6 campuses with distance > 500 km (AK/HI)
+campus file: 2425 campuses; dated 1068; dated with news supply 1065; dated missing county 2; 2026 announcements using 2025 news: 227

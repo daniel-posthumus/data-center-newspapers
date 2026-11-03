@@ -1,0 +1,75 @@
+# Progress log
+
+- 2026-11-03 09:13 — 00_profile_aterio done: US facilities=7132, campuses=2425
+- 2026-11-03 09:14 — 01a CBP downloads: 19 of 19 years
+- 2026-11-03 09:19 — 02a QCEW downloads finished: 
+- 2026-11-03 09:19 — RUCC/UIC: 3152 rows (dropped 89 PR/territory rows); RUCC2023 non-missing 3144, UIC2024 non-missing 3144; metro counties (2023 rows) 1186; 8 legacy CT counties added from 2013; rucc2013 matched 3139
+- 2026-11-03 09:19 — 03 population panel built
+- 2026-11-03 09:19 — ACS 2021 5yr: 3143 counties (dropped 78 PR rows), national pop 329,725,481, missing aland 0, missing med income 1, CT fips ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015']
+- 2026-11-03 09:21 — 01b CBP cleaned; 2017+ CBP omits cells with <3 establishments (zero flag unusable after 2016)
+- 2026-11-03 09:22 — 02b QCEW cleaned (establishment counts published for all cells; 2005-2025)
+- 2026-11-03 09:22 — 04 news panel built (QCEW primary, CBP alongside)
+- 2026-11-03 09:22 — 11_pull_fcc_broadcast: CDBS facility (2024-01 vintage) -> fcc_stations/fcc_county parquet
+- 2026-11-03 09:22 — 11_pull_fcc_broadcast: CDBS facility (2024-01 vintage) -> fcc_stations/fcc_county parquet
+- 2026-11-03 09:23 — 11_pull_fcc_broadcast: CDBS facility (2024-01 vintage) -> fcc_stations/fcc_county parquet
+- 2026-11-03 09:23 — 11_pull_fcc_broadcast: CDBS facility (2024-01 vintage) -> fcc_stations/fcc_county parquet
+- 2026-11-03 09:23 — 05 Aterio campuses built: 2425 campuses, 1068 with announced date
+- 2026-11-03 09:23 — 12_check_gdelt: RESULT: bq not installed -> unusable. Logged failure; stopping.
+- 2026-11-03 09:24 — 05 Aterio campuses built: 2425 campuses, 1068 with announced date
+- 2026-11-03 09:24 — 06 A3 overlap: 635 of 1066 dated campuses in counties with a QCEW decline within +/-3y; 61 with a 1->0 transition
+- 2026-11-03 09:25 — pres_county: 21807 rows; years [np.int64(2000), np.int64(2004), np.int64(2008), np.int64(2012), np.int64(2016), np.int64(2020), np.int64(2024)]; dropped 0 territory rows; AK 280 district rows -> 1 statewide row/year (fips 02000); national R share of total: 2000=0.4787, 2004=0.5063, 2008=0.4568, 2012=0.4701, 2016=0.4614, 2020=0.4684, 2024=0.4991
+- 2026-11-03 09:25 — 13_check_datacenterwatch: 30 pages checked; data links=0 pdf=4
+- 2026-11-03 09:25 — pres_county: 21807 rows; years [np.int64(2000), np.int64(2004), np.int64(2008), np.int64(2012), np.int64(2016), np.int64(2020), np.int64(2024)]; dropped 0 territory rows; AK 280 district rows -> 1 statewide row/year (fips 02000); national R share of total: 2000=0.4787, 2004=0.5063, 2008=0.4568, 2012=0.4701, 2016=0.4614, 2020=0.4684, 2024=0.4991
+- 2026-11-03 09:26 — pres_county: 21794 rows; years [np.int64(2000), np.int64(2004), np.int64(2008), np.int64(2012), np.int64(2016), np.int64(2020), np.int64(2024)]; dropped 0 territory rows, 1 zero-vote rows; KC MO folded into 29095; DC wards (2024) -> 11001; AK 280 district rows -> 1 statewide row/year (fips 02000); national R share of total: 2000=0.4787, 2004=0.5063, 2008=0.4568, 2012=0.4701, 2016=0.4614, 2020=0.4684, 2024=0.4991
+- 2026-11-03 09:33 — CoG: 3147 county rows (3139 from 2022 incl. CT planning regions, + 8 legacy CT from 2017); dropped 0 territory rows; 2022 national: county 3031, municipal 19491, township 16214, special 39555, school 12546; fips not in county list: []
+- 2026-11-03 09:33 — CoG: 3147 county rows (3139 from 2022 incl. CT planning regions, + 8 legacy CT from 2017); dropped 0 territory rows; 2022 national: county 3031, municipal 19491, township 16214, special 39555, school 12546; fips not in county list: []
+- 2026-11-03 09:34 — 13_check_datacenterwatch: 30 pages checked; data links=0 pdf=4
+- 2026-11-03 09:34 — 40 analysis files built
+- 2026-11-03 09:34 — 32_pull_aqueduct: facility_water 7132 rows (7130 matched); county_water 3143 rows
+- 2026-11-03 09:35 — 41 measurement diagnostics done
+- 2026-11-03 09:35 — NASS land value/acre: 9232 rows; by year {2012: 3077, 2017: 3077, 2022: 3078}; suppressed (D) {2012: 2, 2017: 8, 2022: 6}; other non-numeric {}; dropped 0 '998 other combined' rows and 0 territory rows; CT fips {np.int64(2012): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015'], np.int64(2017): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015'], np.int64(2022): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015']}
+- 2026-11-03 09:36 — 13_check_datacenterwatch: 30 pages checked; data links=0 pdf=4
+- 2026-11-03 09:36 — NASS land value/acre: 9232 rows; by year {2012: 3077, 2017: 3077, 2022: 3078}; suppressed (D) {2012: 2, 2017: 8, 2022: 6}; other non-numeric {}; dropped 0 '998 other combined' rows and 0 territory rows; CT fips {np.int64(2012): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015'], np.int64(2017): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015'], np.int64(2022): ['09001', '09003', '09005', '09007', '09009', '09011', '09013', '09015']}
+- 2026-11-03 09:36 — 31_pull_eia861: years [2019, 2020, 2021, 2022, 2023, 2024, 2025]; utility rows 18977; county name match 0.999; facility same-state ind-price match 0.854 of those with UTILITY_CODE
+- 2026-11-03 09:36 — 04 news panel built (QCEW primary, CBP alongside)
+- 2026-11-03 09:37 — 31_pull_eia861: years [2019, 2020, 2021, 2022, 2023, 2024, 2025]; utility rows 18977; county name match 0.999; facility ind-price match (any year) 0.904 of those with UTILITY_CODE
+- 2026-11-03 09:37 — 40 analysis files built
+- 2026-11-03 09:37 — 42 descriptives done
+- 2026-11-03 09:37 — 14_profile_aterio_links: link-field profile tables written (aterio_links_*)
+- 2026-11-03 09:37 — 40 analysis files built
+- 2026-11-03 09:37 — 14_profile_aterio_links: link-field profile tables written (aterio_links_*)
+- 2026-11-03 09:37 — 14_profile_aterio_links: link-field profile tables written (aterio_links_*)
+- 2026-11-03 09:38 — 43 extensive margin done
+- 2026-11-03 09:39 — 33_pull_broadband: NBM blocked (403); used FCC Form 477 area table, June 2021 (status V1); 3143 counties
+- 2026-11-03 09:39 — 33_pull_broadband: NBM blocked (403); used FCC Form 477 area table, June 2021 (status V1); 3143 counties
+- 2026-11-03 09:39 — 44 intensive margin done
+- 2026-11-03 09:40 — 45 secrecy test done
+- 2026-11-03 09:41 — 46 placebos + LOSO done
+- 2026-11-03 09:52 — 31_pull_eia861: years [2019, 2020, 2021, 2022, 2023, 2024, 2025]; utility rows 18977; county name match 0.999; facility ind-price match (any year) 0.904 of those with UTILITY_CODE
+- 2026-11-03 10:03 — 10_pull_loc_directory: 28605 titles -> data/clean/loc_newspapers.parquet
+- 2026-11-03 10:03 — 10_pull_loc_directory: 29001 titles -> data/clean/loc_newspapers.parquet
+- 2026-11-03 10:04 — 10_pull_loc_directory: 29001 titles -> data/clean/loc_newspapers.parquet
+- 2026-11-03 10:17 — 40 analysis files built
+- 2026-11-03 10:17 — 41 measurement diagnostics done
+- 2026-11-03 10:17 — 42 descriptives done
+- 2026-11-03 10:17 — 43 extensive margin done
+- 2026-11-03 10:17 — 44 intensive margin done
+- 2026-11-03 10:17 — 45 secrecy test done
+- 2026-11-03 10:18 — 46 placebos + LOSO done
+- 2026-11-03 10:21 — 50 memo built
+- 2026-11-03 10:22 — 50 memo built
+- 2026-11-03 10:22 — 50 memo built
+- 2026-11-03 10:23 — 50 memo built
+- 2026-11-03 10:23 — 43 extensive margin done
+- 2026-11-03 10:23 — 50 memo built
+- 2026-11-03 10:23 — 50 memo built
+- 2026-11-03 11:12 — 30_pull_grid_infra: county_grid 3143 rows, facility_grid 7132 rows; OSM substations 73404 (6756 >=230kV); HIFLD lines 94619
+- 2026-11-03 11:13 — 40 analysis files built
+- 2026-11-03 11:13 — 41 measurement diagnostics done
+- 2026-11-03 11:13 — 42 descriptives done
+- 2026-11-03 11:13 — 43 extensive margin done
+- 2026-11-03 11:13 — 44 intensive margin done
+- 2026-11-03 11:13 — 45 secrecy test done
+- 2026-11-03 11:13 — 46 placebos + LOSO done
+- 2026-11-03 11:16 — 50 memo built
+- 2026-11-03 grid controls landed; reran 40-46, rebuilt memo (grid-pending language removed, changed coefficients updated)

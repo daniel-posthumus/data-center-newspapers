@@ -1,0 +1,7 @@
+.claude/*
+# data live in Dropbox (symlink)
+data
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,2 @@
+term,coef,se,p,n,spec,note,outcome,formula,cluster
+undisclosed,0.12958109900270048,0.3262346278848292,0.6914187292578646,756,"lag on undisclosed, state FE",,detect_lag_m,detect_lag_m ~ undisclosed + log_mw_f + mw_miss + ai + btm | state,fips

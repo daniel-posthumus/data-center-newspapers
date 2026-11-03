@@ -1,0 +1,4 @@
+GDELT/BigQuery availability check 2026-11-03
+which bq: None
+which gcloud: None
+RESULT: bq not installed -> unusable. Logged failure; stopping.

@@ -1,0 +1,41 @@
+/Users/danielposthumus/data-center-newspapers/.venv/lib/python3.12/site-packages/pyogrio/raw.py:200: RuntimeWarning: organizePolygons() received a polygon with more than 100 parts.  The processing may be really slow.  You can skip the processing by setting METHOD=SKIP.
+  return ogr_read(
+US pieces: 3433 unique pfaf_id: 1275
+bws_label
+Low (<10%)                660
+Medium - High (20-40%)    149
+Extremely High (>80%)     143
+Low - Medium (10-20%)     112
+Arid and Low Water Use    100
+High (40-80%)              90
+No Data                    21
+Name: count, dtype: int64
+pfaf with >1 bws_raw value: 0
+
+==== REPORT
+facilities: 7132 matched: 7130 {'within': 7129, nan: 2, 'nearest<=5km': 1}
+bws_label
+Medium - High (20-40%)    1725
+Low (<10%)                1684
+High (40-80%)             1427
+Extremely High (>80%)     1162
+Low - Medium (10-20%)     1046
+Arid and Low Water Use      83
+No Data                      3
+NaN                          2
+Name: count, dtype: int64
+            count        mean          std  ...       50%       75%     max
+bws_raw    7127.0  320.471262  1759.601205  ...  0.325513  0.601543  9999.0
+bws_score  7127.0    2.436796     1.638803  ...  2.702714  3.588668     5.0
+bws_cat    7127.0    1.872036     1.425840  ...  2.000000  3.000000     4.0
+
+[3 rows x 8 columns]
+counties: 3143 with bws_raw_cty: 3134
+                    count      mean       std  ...       50%       75%   max
+bws_raw_cty        3134.0  0.309477  0.291121  ...  0.218924  0.416410   1.0
+bws_score_cty      3138.0  2.030545  1.499857  ...  1.999827  2.962837   5.0
+bws_cat_cty        3138.0  1.571383  1.349921  ...  1.500000  2.000000   4.0
+share_arid_lowuse  3143.0  0.021167  0.114449  ...  0.000000  0.000000   1.0
+n_subbasins        3143.0  2.914413  2.436591  ...  2.000000  3.000000  70.0
+
+[5 rows x 8 columns]

@@ -1,0 +1,58 @@
+Campuses with announced date and county: 1066
+A3 overlap totals:
+               spec  campuses_with_event    share  campuses_with_any_observable_year  distinct_counties_with_event  n_campuses
+       q_decl_w-3_3                  635 0.595685                               1065                           240        1066
+       q_decl_w-3_0                  602 0.564728                               1065                           233        1066
+q_decl_w-3_3_no2022                  610 0.572233                               1065                           223        1066
+       q_1to0_w-3_3                   61 0.057223                               1065                            28        1066
+       q_1to0_w-3_0                   54 0.050657                               1065                            26        1066
+q_1to0_w-3_3_no2022                   60 0.056285                               1065                            27        1066
+       c_decl_w-3_3                   19 0.017824                                 36                            18        1066
+       c_1to0_w-3_3                    1 0.000938                                 36                             1        1066
+By announcement year:
+ ann_year  campuses  q_decl_w-3_3  q_1to0_w-3_3  q_decl_w-3_0  q_1to0_w-3_0  failed  failed_and_q_decl_w-3_3
+     2002         1             0             0             0             0       0                        0
+     2009         1             1             0             1             0       0                        0
+     2010         1             0             0             0             0       0                        0
+     2011         3             3             0             3             0       0                        0
+     2013         1             1             0             1             0       0                        0
+     2015         2             1             0             1             0       0                        0
+     2016         5             2             1             2             1       0                        0
+     2017         8             5             0             5             0       0                        0
+     2018         7             6             0             5             0       0                        0
+     2019         8             7             0             7             0       0                        0
+     2020        10             8             0             6             0       0                        0
+     2021        26            22             1            21             0       4                        4
+     2022        44            38             4            29             0       1                        1
+     2023        85            61             9            50             8       3                        3
+     2024       230           156            18           147            17      16                       11
+     2025       409           211            18           211            18      51                       30
+     2026       225           113            10           113            10      12                        6
+By campus stage:
+                   stage_grp  campuses  q_decl_w-3_3  q_1to0_w-3_3  q_decl_w-3_0  q_1to0_w-3_0
+                      Active       162         120.0           7.0         104.0           5.0
+                Announcement       584         333.0          32.0         327.0          29.0
+                Construction       199         110.0          11.0         103.0          10.0
+                     Delayed        11           8.0           2.0           5.0           2.0
+Failed (withdrawn/cancelled)        87          55.0           7.0          54.0           6.0
+                   Land Bank        23           9.0           2.0           9.0           2.0
+                       Total      1066         635.0          61.0         602.0          54.0
+failed x q_decl(+/-3):
+q_decl_w-3_3  0.0  1.0   All
+failed                      
+0             399  580   979
+1              32   55    87
+All           431  635  1066
+failed x q_1to0(+/-3):
+q_1to0_w-3_3   0.0  1.0   All
+failed                       
+0              925   54   979
+1               80    7    87
+All           1005   61  1066
+                                   cell   n
+                 failed & decline(+/-3)  55
+             not failed & decline(+/-3) 580
+                    failed & 1->0(+/-3)   7
+                not failed & 1->0(+/-3)  54
+             stalled_24 & decline(+/-3)  52
+eligible for stalled_24 & decline(+/-3) 227

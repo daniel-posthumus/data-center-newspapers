@@ -1,0 +1,93 @@
+D sample: 1065 dated campuses with news supply; failed = 87; stalled_24 eligible = 299 (stalled = 72)
+controls unavailable: []
+after dropping missing county controls: 1049 campuses
+
+D failed (LPM; mean 0.082; N events 86) on q_pc10k:
+   term    (1) bivariate     (2) +project (3) +county & siting controls (4) state x year FE (5) BA x year FE
+q_pc10k -0.0261 (0.0264) -0.0216 (0.0285)              -0.0250 (0.0317)    -0.0347 (0.0273) -0.0214 (0.0374)
+      N             1049             1049                          1049                 968              719
+
+D failed (LPM; mean 0.082; N events 86) on q_zero:
+  term   (1) bivariate    (2) +project (3) +county & siting controls (4) state x year FE (5) BA x year FE
+q_zero 0.0296 (0.0288) 0.0280 (0.0281)               0.0238 (0.0305)     0.0288 (0.0360)  0.0189 (0.0400)
+     N            1049            1049                          1049                 968              719
+
+D stalled_24 (LPM; mean 0.242; N events 72) on q_pc10k:
+   term   (1) bivariate    (2) +project (3) +county & siting controls (4) state x year FE (5) BA x year FE
+q_pc10k 0.0454 (0.1721) 0.0651 (0.1756)               0.0719 (0.1623)     0.3709 (0.3279)  0.2544 (0.2348)
+      N             298             298                           298                 232              228
+
+D stalled_24 (LPM; mean 0.242; N events 72) on q_zero:
+  term   (1) bivariate    (2) +project (3) +county & siting controls (4) state x year FE (5) BA x year FE
+q_zero 0.0727 (0.0751) 0.1026 (0.0758)               0.0921 (0.0713)    -0.0019 (0.1163)  0.0259 (0.0894)
+     N             298             298                           298                 232              228
+Robustness outcomes (coefficients):
+   outcome regressor                          spec      coef       se        p    n
+failed_any   q_pc10k                 (1) bivariate -0.026076 0.026445 0.324644 1049
+failed_any   q_pc10k                  (2) +project -0.021551 0.028488 0.449745 1049
+failed_any   q_pc10k (3) +county & siting controls -0.025045 0.031680 0.429612 1049
+failed_any   q_pc10k           (4) state x year FE -0.034720 0.027273 0.203703  968
+failed_any   q_pc10k              (5) BA x year FE -0.021423 0.037437 0.567561  719
+failed_any    q_zero                 (1) bivariate  0.029605 0.028758 0.303823 1049
+failed_any    q_zero                  (2) +project  0.027999 0.028121 0.319949 1049
+failed_any    q_zero (3) +county & siting controls  0.023829 0.030501 0.435061 1049
+failed_any    q_zero           (4) state x year FE  0.028835 0.036023 0.423890  968
+failed_any    q_zero              (5) BA x year FE  0.018872 0.040015 0.637512  719
+stalled_12   q_pc10k                 (1) bivariate -0.057152 0.055849 0.307116  622
+stalled_12   q_pc10k                  (2) +project -0.045610 0.043943 0.300273  622
+stalled_12   q_pc10k (3) +county & siting controls -0.110604 0.063794 0.084159  622
+stalled_12   q_pc10k           (4) state x year FE -0.074841 0.049480 0.131815  545
+stalled_12   q_pc10k              (5) BA x year FE -0.077820 0.051548 0.132608  518
+stalled_12    q_zero                 (1) bivariate  0.158573 0.076233 0.038508  622
+stalled_12    q_zero                  (2) +project  0.175240 0.075490 0.021050  622
+stalled_12    q_zero (3) +county & siting controls  0.211611 0.057942 0.000315  622
+stalled_12    q_zero           (4) state x year FE  0.159824 0.070010 0.023385  545
+stalled_12    q_zero              (5) BA x year FE  0.144384 0.066351 0.030645  518
+stalled_18   q_pc10k                 (1) bivariate  0.016926 0.139735 0.903733  425
+stalled_18   q_pc10k                  (2) +project  0.027265 0.125545 0.828334  425
+stalled_18   q_pc10k (3) +county & siting controls -0.038815 0.130325 0.766199  425
+stalled_18   q_pc10k           (4) state x year FE -0.019106 0.190973 0.920455  358
+stalled_18   q_pc10k              (5) BA x year FE  0.013587 0.148353 0.927165  343
+stalled_18    q_zero                 (1) bivariate  0.085925 0.085931 0.318775  425
+stalled_18    q_zero                  (2) +project  0.123861 0.080772 0.127032  425
+stalled_18    q_zero (3) +county & siting controls  0.146435 0.068340 0.033564  425
+stalled_18    q_zero           (4) state x year FE  0.145014 0.081244 0.076520  358
+stalled_18    q_zero              (5) BA x year FE  0.094569 0.076086 0.216067  343
+stalled_36   q_pc10k                 (1) bivariate -0.233026 0.066087 0.000772  143
+stalled_36   q_pc10k                  (2) +project -0.245650 0.102103 0.018942  143
+stalled_36   q_pc10k (3) +county & siting controls -0.342885 0.184196 0.067124  143
+stalled_36   q_pc10k           (4) state x year FE -1.171640 0.502033 0.027298   88
+stalled_36   q_pc10k              (5) BA x year FE -0.488612 0.416120 0.248240   94
+stalled_36    q_zero                 (1) bivariate  0.064662 0.124140 0.604195  143
+stalled_36    q_zero                  (2) +project  0.115767 0.123506 0.352001  143
+stalled_36    q_zero (3) +county & siting controls  0.138735 0.132250 0.297990  143
+stalled_36    q_zero           (4) state x year FE -0.171837 0.314332 0.589094   88
+stalled_36    q_zero              (5) BA x year FE -0.165981 0.273834 0.548334   94
+campuses whose Aterio FIPS differs from point-in-polygon county: 68 of 1049
+Cox: 1049 campuses; events (construction start) 348; non-positive durations set to 0.5 month: 44 (construction start on/before announcement)
+Cox PH, time from announcement to construction start (HR>1 = faster start; penalizer 0.01; SEs not clustered):
+regressor                 spec  hazard_ratio      coef       se        p    n  events
+  q_pc10k        (1) bivariate      1.259962  0.231082 0.166913 0.166222 1049     348
+  q_pc10k         (2) +project      1.123108  0.116100 0.159022 0.465336 1049     348
+  q_pc10k (3) +county & siting      1.259257  0.230522 0.146961 0.116743 1049     348
+   q_zero        (1) bivariate      0.798740 -0.224720 0.163229 0.168599 1049     348
+   q_zero         (2) +project      0.679085 -0.387009 0.164851 0.018894 1049     348
+   q_zero (3) +county & siting      0.664696 -0.408426 0.178994 0.022502 1049     348
+Within-county:
+                                      metric  value
+            counties with >=2 dated campuses    175
+        ... announced in >=2 different years    139
+... with any within-county change in q_pc10k     93
+                   ... with q_zero switching      3
+                 campuses in usable counties    520
+          failed campuses in usable counties     36
+Within-county regressions:
+   outcome regressor                spec      coef       se        p   n note
+    failed   q_pc10k county FE + year FE -0.011718 0.190396 0.951063 514     
+    failed   q_pc10k           county FE -0.185529 0.164905 0.263488 520     
+    failed    q_zero county FE + year FE -0.006643 0.044700 0.882199 514     
+    failed    q_zero           county FE -0.008395 0.055967 0.881093 520     
+stalled_24   q_pc10k county FE + year FE -0.092636 0.772253 0.905186 193     
+stalled_24   q_pc10k           county FE -0.162129 0.717759 0.822536 198     
+stalled_24    q_zero county FE + year FE -0.111468 0.065795 0.098870 193     
+stalled_24    q_zero           county FE  0.025218 0.034799 0.473200 198     

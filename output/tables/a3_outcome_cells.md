@@ -1,0 +1,8 @@
+| cell                                    |   n |
+|:----------------------------------------|----:|
+| failed & decline(+/-3)                  |  55 |
+| not failed & decline(+/-3)              | 580 |
+| failed & 1->0(+/-3)                     |   7 |
+| not failed & 1->0(+/-3)                 |  54 |
+| stalled_24 & decline(+/-3)              |  52 |
+| eligible for stalled_24 & decline(+/-3) | 227 |

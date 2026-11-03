@@ -1,0 +1,86 @@
+E sample A (dated): 1059; undisclosed 265 (0.250); no_end_user 970 (0.916)
+
+E undisclosed on q_pc10k (sample A):
+   term    (1) bivariate     (2) +project (3) +county controls (4) state x year FE (5) BA x year FE
+q_pc10k -0.0397 (0.0372) -0.0554 (0.0372)    -0.0877* (0.0468)    -0.0566 (0.0426) -0.0652 (0.0483)
+      N             1059             1059                 1059                 979              724
+
+E undisclosed on q_zero (sample A):
+  term   (1) bivariate    (2) +project (3) +county controls (4) state x year FE (5) BA x year FE
+q_zero 0.0502 (0.0488) 0.0450 (0.0479)      0.0653 (0.0509)     0.0505 (0.0563)  0.0785 (0.0572)
+     N            1059            1059                 1059                 979              724
+
+E no_end_user on q_pc10k (sample A):
+   term    (1) bivariate     (2) +project (3) +county controls (4) state x year FE (5) BA x year FE
+q_pc10k -0.0676 (0.0412) -0.0550 (0.0384)     -0.0601 (0.0438)  -0.0844** (0.0386) -0.0458 (0.0534)
+      N             1059             1059                 1059                 979              724
+
+E no_end_user on q_zero (sample A):
+  term    (1) bivariate    (2) +project (3) +county controls (4) state x year FE (5) BA x year FE
+q_zero -0.0031 (0.0251) 0.0119 (0.0252)     -0.0019 (0.0267)     0.0020 (0.0291) -0.0215 (0.0375)
+     N             1059            1059                 1059                 979              724
+Sample B:
+    outcome    regressor                      spec      coef       se        p    n
+undisclosed q_pc10k_2025             (1) bivariate -0.000969 0.028562 0.972952 2405
+undisclosed q_pc10k_2025             (3) +controls -0.079758 0.033841 0.018749 2405
+undisclosed q_pc10k_2025 (3b) +controls + state FE -0.072043 0.033194 0.030367 2404
+undisclosed  q_zero_2025             (1) bivariate  0.110002 0.048002 0.022270 2405
+undisclosed  q_zero_2025             (3) +controls  0.038188 0.039975 0.339806 2405
+undisclosed  q_zero_2025 (3b) +controls + state FE  0.026649 0.038145 0.485059 2404
+no_end_user q_pc10k_2025             (1) bivariate -0.085160 0.034583 0.014073 2405
+no_end_user q_pc10k_2025             (3) +controls -0.065297 0.036924 0.077490 2405
+no_end_user q_pc10k_2025 (3b) +controls + state FE -0.068137 0.035601 0.056105 2404
+no_end_user  q_zero_2025             (1) bivariate -0.019410 0.018434 0.292792 2405
+no_end_user  q_zero_2025             (3) +controls  0.011959 0.018461 0.517335 2405
+no_end_user  q_zero_2025 (3b) +controls + state FE  0.017336 0.019291 0.369201 2404
+Undisclosed by news group (dated):
+q_grp  campuses  undisclosed  no_end_user
+    0       150     0.293333     0.913333
+    1       203     0.251232     0.901478
+   2+       706     0.240793     0.920680
+Undisclosed by state (all campuses, top 20 by count):
+state  campuses  undisclosed_n  undisclosed_share
+   TX       340             32           0.094118
+   VA       319             45           0.141066
+   CA       177              9           0.050847
+   GA       130             43           0.330769
+   OH       111              8           0.072072
+   IL       104             11           0.105769
+   PA        90             35           0.388889
+   AZ        82              7           0.085366
+   NY        73             12           0.164384
+   FL        66              6           0.090909
+   NC        57              8           0.140351
+   IN        53              8           0.150943
+   OR        52              2           0.038462
+   WA        50              1           0.020000
+   NJ        48              5           0.104167
+   MN        48              4           0.083333
+   MI        45              3           0.066667
+   MO        44              8           0.181818
+   CO        38              2           0.052632
+   UT        37              3           0.081081
+Facilities in both snapshots: CND status Feb x Jun:
+             Jun CND=0  Jun CND=1  Jun CND=All
+Feb CND=0         4438          0         4438
+Feb CND=1          331        998         1329
+Feb CND=All       4769        998         5767
+Resolution by 2025 news group:
+       cnd_in_feb  resolved_by_jun  share_resolved
+q_grp                                             
+0             308               84        0.272727
+1             380               94        0.247368
+2+            641              153        0.238690
+Resolved facilities: 331; with RECORD_UPDATED_DATE after 2026-02-09: 331
+Detection lag (campuses announced >= 2024-07-01) by undisclosed:
+             count      mean       std        min       25%       50%       75%        max
+undisclosed                                                                               
+0            510.0  1.763369  4.497683 -23.523614  0.032854  0.262834  1.905544  21.322382
+1            249.0  1.659731  3.038848   0.000000  0.065708  0.229979  1.412731  16.657084
+       term     coef       se        p   n
+undisclosed 0.129581 0.326235 0.691419 756
+Share with no announced date by undisclosed (all campuses):
+             size      mean
+undisclosed                
+0            2122  0.622997
+1             303  0.115512

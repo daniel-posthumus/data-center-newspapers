@@ -1,0 +1,76 @@
+US facilities: 7132
+Coords present: 7130; PIP assigned: 7129; Aterio FIPS present: 6999 (valid 2020 code: 6999)
+Agreement PIP vs Aterio FIPS where both present: 0.9367 (443 disagree of 6998)
+Aterio FIPS not in 2020 universe: {}
+County source:
+fips_source
+point-in-polygon    7129
+none                   2
+aterio_fips            1
+Disagreements in same state: 0.998
+A5 stage x (cancel date, withdrawn date) facility counts:
+                        cancel_date=0|withdraw_date=0  cancel_date=0|withdraw_date=1  cancel_date=1|withdraw_date=0  cancel_date=1|withdraw_date=1   All
+stage                                                                                                                                                   
+Active                                           2026                              0                              0                              0  2026
+Announcement                                     3631                              0                              0                              0  3631
+Cancelled                                           1                              0                              4                             14    19
+Construction                                      766                              0                              0                              0   766
+Delayed                                            84                              0                              0                              0    84
+Land Bank                                          54                              0                              0                              0    54
+Not Approved/Withdrawn                             30                            512                              5                              5   552
+All                                              6592                            512                              9                             19  7132
+Facility months announced->construction start (both present, start<=snapshot):
+count    955.00
+mean      14.90
+std       16.03
+min      -16.69
+25%        4.24
+50%       10.09
+75%       20.30
+80%       23.03
+90%       35.17
+max      128.59
+
+Campuses: 2425; multi-county campuses: 5; no county: 2
+Campus stage:
+stage_campus
+Active                    1380
+Announcement               636
+Construction               239
+Not Approved/Withdrawn      98
+Land Bank                   47
+Delayed                     15
+Cancelled                   10
+failed (all bldgs): 108  failed_any: 109  (differ: 1)
+Campuses with announced date: 1068
+Campus announced year:
+ann_year
+2002.0       1
+2009.0       1
+2010.0       1
+2011.0       3
+2013.0       1
+2015.0       2
+2016.0       5
+2017.0       8
+2018.0       7
+2019.0       8
+2020.0      10
+2021.0      26
+2022.0      44
+2023.0      85
+2024.0     230
+2025.0     409
+2026.0     227
+NaN       1357
+stalled_12: eligible 628, stalled 256 (0.408)
+stalled_18: eligible 428, stalled 138 (0.322)
+stalled_24: eligible 300, stalled 72 (0.240)
+stalled_36: eligible 145, stalled 20 (0.138)
+                                   outcome  n_defined  n_eq_1    share  n_defined_with_ann_date  n_eq_1_with_ann_date
+failed (all buildings withdrawn/cancelled)       2425     108 0.044536                     1068                    87
+                 failed_any (any building)       2425     109 0.044948                     1068                    87
+                                stalled_12        628     256 0.407643                      628                   256
+                                stalled_18        428     138 0.322430                      428                   138
+                                stalled_24        300      72 0.240000                      300                    72
+                                stalled_36        145      20 0.137931                      145                    20

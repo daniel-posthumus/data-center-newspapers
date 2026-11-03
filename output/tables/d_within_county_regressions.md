@@ -1,0 +1,10 @@
+| term    |   coef |    se |     p |   n | spec                | note   | outcome    | regressor   | formula                                                                                           | cluster   |
+|:--------|-------:|------:|------:|----:|:--------------------|:-------|:-----------|:------------|:--------------------------------------------------------------------------------------------------|:----------|
+| q_pc10k | -0.012 | 0.190 | 0.951 | 514 | county FE + year FE |        | failed     | q_pc10k     | failed ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year     | fips      |
+| q_pc10k | -0.186 | 0.165 | 0.263 | 520 | county FE           |        | failed     | q_pc10k     | failed ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips                | fips      |
+| q_zero  | -0.007 | 0.045 | 0.882 | 514 | county FE + year FE |        | failed     | q_zero      | failed ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year      | fips      |
+| q_zero  | -0.008 | 0.056 | 0.881 | 520 | county FE           |        | failed     | q_zero      | failed ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips                 | fips      |
+| q_pc10k | -0.093 | 0.772 | 0.905 | 193 | county FE + year FE |        | stalled_24 | q_pc10k     | stalled_24 ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year | fips      |
+| q_pc10k | -0.162 | 0.718 | 0.823 | 198 | county FE           |        | stalled_24 | q_pc10k     | stalled_24 ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips            | fips      |
+| q_zero  | -0.111 | 0.066 | 0.099 | 193 | county FE + year FE |        | stalled_24 | q_zero      | stalled_24 ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year  | fips      |
+| q_zero  |  0.025 | 0.035 | 0.473 | 198 | county FE           |        | stalled_24 | q_zero      | stalled_24 ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips             | fips      |

@@ -1,0 +1,59 @@
+Data Center Watch download check 2026-11-03
+robots.txt: Squarespace default; disallows /api/, /search, ?format=json etc.; no blanket Disallow for * (AI-bot group shares the same rules).
+  https://www.datacenterwatch.org/newsletter [200] title='Blog 3 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/pwtb5jh5cf7emexbr41h0ym29ywax0 [200] title='Briefing 03/27/2026 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/briefing-03132026 [200] title='Briefing 03/13/2026 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/czuuq89s840knvh3mjgznsoo0bxrhr [200] title='Briefing 04/17/2025&nbsp; &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/briefing-04102025 [200] title='Briefing 04/10/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/u2hem0d3zeqgwk8t1r302p5gl2dtgp [200] title='Briefing 04/03/2025 &mdash; Data Center Watch' downloads=1
+      -> https://www.house.mn.gov/comm/docs/sqd0Yme5c0WixQrx7u-aJw.pdf
+  https://www.datacenterwatch.org/newsletter/qg3zkco4q8lgdx3gmuwwh4gkb2ikxf [200] title='Briefing 03/27/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/blog-post-title-one-w9bst [200] title='Briefing 03/20/2025&nbsp; &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/blog-post-title-three-39xb8 [200] title='Briefing 03/13/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/blog-post-title-four-wt7sw [200] title='Briefing 03/06/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/1tb41cqde2x9ksm6c5656x98mg0tza [200] title='Briefing 02/27/2025&nbsp; &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/ec7ery8o0b586xgswihqfhp3uv7n9i [200] title='Briefing 02/20/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/hxuookpud6mvn9qcj2y0mbe9dbnnsm [200] title='Briefing 02/13/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/briefing-02062025 [200] title='Briefing 02/06/2025  &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/blog-post-two-87y7p [200] title='Briefing 01/23/2025 &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/newsletter/blog-post-one-9kk9b [200] title='Briefing 01/16/2025 &mdash; Data Center Watch' downloads=1
+      -> https://senate.texas.gov/members/d16/press/en/p20230426a.pdf
+  https://www.datacenterwatch.org/home [200] title='Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/report [200] title='$64 billion of data center projects have been blocked or delayed amid local oppo' downloads=2
+      -> https://eservice.pwcgov.org/planning/documents/CPA/Planning_CorrectionsReport_S2_2022_0225.pdf
+      -> https://www.datacenterwatch.org/s/Data-Center-Watch-Report.pdf
+  https://www.datacenterwatch.org/press-mentions [200] title='Media Coverage &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/q22025 [200] title='Data Center Watch Report Q2 2025 UPDATE &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/q3-q4-2025 [200] title='Data Center Watch Report Q2 2025 UPDATE &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/q1-2026 [200] title='Data Center Watch Report Q2 2025 UPDATE &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/q1-2026-1 [200] title='Data Center Watch Report Q2 2025 UPDATE &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/q2-2026 [200] title='Data Center Watch Report Q2 2025 UPDATE &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/shop [200] title='Shop &mdash; Data Center Watch' downloads=0
+  https://www.datacenterwatch.org/shop/p/q1-2026-data-center-watch-in-depth-analysis-report [200] title='Q1 2026 Data Center Watch In-depth Analysis Report &mdash; Data Center Watch' downloads=0 price=['250000']
+  https://www.datacenterwatch.org/shop/p/q2-2026-data-center-watch-in-depth-analysis-report-edk9a [200] title='Q2 2026 Data Center Watch In-depth Analysis Report &mdash; Data Center Watch' downloads=0 price=['250000']
+  https://www.datacenterwatch.org/shop/p/q1-2026-insights-data-center-watch-report [200] title='Q1 2026 Insights Data Center Watch Report &mdash; Data Center Watch' downloads=0 price=['25000']
+  https://www.datacenterwatch.org/shop/p/q1-2026-insights-data-center-watch-report-ntrpf [200] title='Q2 2026 Insights Data Center Watch Report &mdash; Data Center Watch' downloads=0 price=['25000']
+  https://www.datacenterwatch.org/shop/p/q3-q4-2025-insights-report [200] title='Q3-Q4 2025 Insights Report &mdash; Data Center Watch' downloads=0 price=['25000']
+candidate data-file links (csv/xlsx/sheets/airtable): []
+pdf links: ['https://www.house.mn.gov/comm/docs/sqd0Yme5c0WixQrx7u-aJw.pdf', 'https://senate.texas.gov/members/d16/press/en/p20230426a.pdf', 'https://eservice.pwcgov.org/planning/documents/CPA/Planning_CorrectionsReport_S2_2022_0225.pdf', 'https://www.datacenterwatch.org/s/Data-Center-Watch-Report.pdf']
+Parsed 16 projects from https://www.datacenterwatch.org/s/Data-Center-Watch-Report.pdf: {'Delayed': 10, 'Blocked': 6}
+matched to an Aterio campus (place>=90 & developer/name>=80): 10 of 16
+  of matched, Aterio stage includes Not Approved/Withdrawn/Cancelled/Delayed: 6
+    dcw_n                 place state                               name_developer dcw_status  matched                 aterio_campus_name                  aterio_provider  aterio_city               aterio_stages  place_score   dev_score
+0       1  Goodyear and Buckeye    AZ                                        Tract    Blocked     True              Buckeye, Tract Campus                            Tract      Buckeye      Not Approved/Withdrawn   100.000000  100.000000
+1       2              Peculiar    MO  Harper Road Technology Park, Diode Ventures    Blocked     True        Harper Road Technology Park                   Diode Ventures     Peculiar      Not Approved/Withdrawn   100.000000  100.000000
+2       3            Chesterton    IN                    Provident Realty Advisors    Blocked     True     Burns Harbor, Provident Campus           Provident Data Centers   Chesterton      Not Approved/Withdrawn   100.000000  100.000000
+3       4              Richmond    VA                                      DC Blox    Blocked     True                                NaN                          DC BLOX     Richmond                Construction   100.000000  100.000000
+4       5        Catle Station    VA                  Headwaters Site Development    Blocked    False       Remington, Convergent Campus  Headwaters Site Development LLC    Remington                Announcement    36.363636  100.000000
+5       6         Cascade Locks    OR            Roundhouse Digital Infrastructure    Blocked    False        BOARDMAN Campus Data Center     Rowan Digital Infrastructure     Boardman                Announcement    38.461538   88.000000
+6       7        Prince William    VA                   QTS & Compass Data Centers    Delayed     True            PW Digital Gateway(QTS)                 QTS Data Centers    Catharpin      Not Approved/Withdrawn   100.000000  100.000000
+7       8       Culpeper County    VA                        Culpeper Acquisitions    Delayed    False                AWS Culpeper Campus                       Amazon AWS  Stevensburg       Announcement; Delayed   100.000000   65.000000
+8       9           King George    VA                                       Amazon    Delayed     True            King George, AWS Campus                       Amazon AWS  King George      Not Approved/Withdrawn   100.000000  100.000000
+9      10            Midlothian    VA                               Province Group    Delayed     True  Province Group Data Center Campus            Company Not Disclosed   Midlothian                Announcement   100.000000  100.000000
+10     11            Fort Worth    TX                       WUSF 5 Rock Creek East    Delayed    False  Black Mountain Data Center Campus                   Black Mountain   Fort Worth                Announcement   100.000000   37.209302
+11     12            Alexandria    VA                       Starwood Capital Group    Delayed    False               Word of Grace Campus           Starwood Capital Group      Herndon  Announcement; Construction    35.294118  100.000000
+12     13           Santa Clara    CA                                  GI Partners    Delayed    False                                NaN               Skybox Datacenters  Santa Clara                      Active   100.000000   41.379310
+13     14             Warrenton    VA                                       Amazon    Delayed     True                                NaN                       Amazon AWS    Warrenton                Announcement   100.000000  100.000000
+14     15          Burns Harbor    IN                                    Provident    Delayed     True     Burns Harbor, Provident Campus           Provident Data Centers   Chesterton      Not Approved/Withdrawn   100.000000  100.000000
+15     16              Manassas    VA                                       Amazon    Delayed     True                Dean Dr, AWS Campus                       Amazon AWS     Manassas                Construction   100.000000  100.000000
+Later quarterly reports (Q2 2025 ... Q2 2026) are HTML summaries only; project-level reports are sold in /shop ($250 'Insights', $2,500 'In-depth').

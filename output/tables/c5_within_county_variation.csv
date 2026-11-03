@@ -1,0 +1,7 @@
+metric,value
+counties in sample,3039.0
+counties with >=1 announcement,458.0
+counties whose q_zero_l1 switches 2010-2026,689.0
+... of which with >=1 announcement,66.0
+median within-county SD of q_pc10k_l1 (all),0.08548946275053787
+median within-county SD of q_pc10k_l1 (announcing counties),0.04775111051614398

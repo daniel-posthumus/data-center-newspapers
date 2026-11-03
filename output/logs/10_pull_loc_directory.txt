@@ -1,0 +1,101 @@
+LoC directory pull 2026-11-03 (SUBSETS, not full directory)
+API item counts: {'national_2000_2026': 23686, 'state_texas': 5930, 'state_virginia': 2991, 'collection_total': 159085}; parsed unique LCCN: 29001
+type counts: {'title': 28175, 'newspaper': 822, 'periodical': 3, 'resource': 1}
+titles with no parsable start year: 5662; no 'dates' field: 493
+US-located titles in pull: 27751
+=== ALL pulled US titles: 27751 titles
+active in/after 2000 (end bound>=2000 or open): 21634 (of which format-variant records '[Online Resource]'/'[Microfilm Reel]': 2482)
+  [all records] n=21634; exact numeric end year: 1325 (0.061); open end (Current/????): 20145 (0.931); uncertain end (e.g. 200?): 164; of open: 'Current'=13590, '????'=6555
+  [excl. format variants] n=19152; exact numeric end year: 1174 (0.061); open end (Current/????): 17817 (0.930); uncertain end (e.g. 200?): 161; of open: 'Current'=11842, '????'=5975
+  exact end-year distribution 2000-2026 (excl. variants): 2000:115, 2001:112, 2002:63, 2003:68, 2004:39, 2005:64, 2006:64, 2007:29, 2008:41, 2009:68, 2010:30, 2011:26, 2012:22, 2013:34, 2014:31, 2015:26, 2016:32, 2017:35, 2018:39, 2019:49, 2020:60, 2021:24, 2022:31, 2023:38, 2024:17, 2025:14, 2026:3
+  start-year counts 2000-2026 (excl. variants): 2000:136, 2001:112, 2002:90, 2003:80, 2004:62, 2005:59, 2006:50, 2007:37, 2008:25, 2009:41, 2010:17, 2011:21, 2012:17, 2013:27, 2014:28, 2015:24, 2016:25, 2017:26, 2018:25, 2019:28, 2020:39, 2021:21, 2022:28, 2023:34, 2024:26, 2025:17
+=== TX (full state subset): 5880 titles
+active in/after 2000 (end bound>=2000 or open): 2419 (of which format-variant records '[Online Resource]'/'[Microfilm Reel]': 99)
+  [all records] n=2419; exact numeric end year: 24 (0.010); open end (Current/????): 2388 (0.987); uncertain end (e.g. 200?): 7; of open: 'Current'=756, '????'=1632
+  [excl. format variants] n=2320; exact numeric end year: 21 (0.009); open end (Current/????): 2292 (0.988); uncertain end (e.g. 200?): 7; of open: 'Current'=682, '????'=1610
+  exact end-year distribution 2000-2026 (excl. variants): 2004:1, 2005:1, 2006:1, 2008:2, 2012:3, 2013:4, 2014:1, 2016:3, 2017:2, 2018:2, 2025:1
+  start-year counts 2000-2026 (excl. variants): 2000:1, 2001:4, 2002:2, 2003:2, 2004:6, 2005:2, 2006:2, 2007:1, 2008:1, 2011:1, 2012:1, 2013:1, 2014:1, 2015:1, 2018:1, 2021:1, 2023:2, 2024:2, 2025:2
+=== VA (full state subset): 2896 titles
+active in/after 2000 (end bound>=2000 or open): 401 (of which format-variant records '[Online Resource]'/'[Microfilm Reel]': 23)
+  [all records] n=401; exact numeric end year: 63 (0.157); open end (Current/????): 329 (0.820); uncertain end (e.g. 200?): 9; of open: 'Current'=271, '????'=58
+  [excl. format variants] n=378; exact numeric end year: 63 (0.167); open end (Current/????): 306 (0.810); uncertain end (e.g. 200?): 9; of open: 'Current'=248, '????'=58
+  exact end-year distribution 2000-2026 (excl. variants): 2000:1, 2001:7, 2002:5, 2003:6, 2004:3, 2005:2, 2006:13, 2007:3, 2008:2, 2009:5, 2011:1, 2013:2, 2014:4, 2017:1, 2018:3, 2019:2, 2020:2, 2021:1
+  start-year counts 2000-2026 (excl. variants): 2000:4, 2001:4, 2002:7, 2003:9, 2004:7, 2005:5, 2006:3, 2007:4, 2008:1, 2009:2, 2010:1, 2011:1, 2013:2, 2014:1, 2015:1, 2016:1, 2017:1, 2019:2, 2020:1, 2021:1
+=== Spot checks (targeted API searches; titles whose end year >= 1990 or open shown)
+- Vindicator (Youngstown) - closed Aug 2019
+    sn91069750: The Vindicator (Williamsburg, Ohio) 19??-19?? | end_raw=19?? | dates_field=1900.0-1999.0
+    sn90068263: The Vindicator ([Cleveland, Ohio]) 1970-Current | end_raw=Current | dates_field=1970.0-9999.0
+    sn85042918: The Vindicator (Youngstown, Ohio; Warren, Ohio) 1984-Current | end_raw=Current | dates_field=1984.0-9999.0
+- Tampa Bay Times - open (control)
+    2019218567: Tampa Bay Times (St. Petersburg, FL) 2012-Current [Online Resource] | end_raw=Current | dates_field=2012-9999
+    2013218696: Tampa Bay Times (St. Petersburg, FL) 2012-Current | end_raw=Current | dates_field=2012-9999
+    sn82014280: The Tampa Tribune (Tampa, Fla.) 1958-2016 | end_raw=2016 | dates_field=1958-2016
+- Rocky Mountain News (Denver) - closed Feb 2009
+    2019200351: Weekly Rocky Mountain News (Denver, Colo.) 1872-19?? [Online Resource] | end_raw=19?? | dates_field=1872.0-1999.0
+    sn89052262: Weekly Rocky Mountain News (Denver, Colo.) 1872-19?? | end_raw=19?? | dates_field=1872.0-1999.0
+    sn83016743: Rocky Mountain News (Denver, Colo.) 1879-1935 | end_raw=1935 | dates_field=nan-nan
+    sn82014495: Weekly Rocky Mountain News (Denver, Colo.) 1859-19?? | end_raw=19?? | dates_field=1859.0-1999.0
+    sn91052207: Rocky Mountain Tourist News (Denver, Colo.) 1939-19?? | end_raw=19?? | dates_field=1939.0-1999.0
+    sn82014496: Rocky Mountain News (Denver, Colo.) 1937-2009 | end_raw=2009 | dates_field=1937.0-2009.0
+    sn94003503: Rocky Mountain Oil Journal (Denver, Co) 199?-Current | end_raw=Current | dates_field=1990.0-9999.0
+- Seattle P-I - print ended Mar 2009 (online continues)
+    sn83045604: The Seattle Post-Intelligencer (Seattle, Wash. Terr. [Wash.]) 1888-1914 | end_raw=1914 | dates_field=nan-nan
+    2019252158: Seattle Post-Intelligencer (Seattle, Washington) 1921-2009 [Online Resource] | end_raw=2009 | dates_field=1921.0-2009.0
+    sn83045605: Seattle Post-Intelligencer (Seattle, Wash.) 1921-2009 | end_raw=2009 | dates_field=1921.0-2009.0
+    sn83045611: Seattle Daily Post-Intelligencer (Seattle, W.T. [Wash.]) 1881-1888 | end_raw=1888 | dates_field=nan-nan
+    sn83009191: The Seattle Times (Seattle, Wash.) 1966-Current | end_raw=Current | dates_field=1966.0-9999.0
+    2019271068: The Seattle Times (Seattle, WA) 1966-Current [Online Resource] | end_raw=Current | dates_field=1966.0-9999.0
+    sn83045610: The Daily Intelligencer (Seattle, Wash. Territory [i.e. Wash.]) 1876-1881 | end_raw=1881 | dates_field=nan-nan
+    00253572: Seattle Union Record ([Seattle, Washington]) 2000-2001 | end_raw=2001 | dates_field=2000.0-2001.0
+    sn84025811: The Seattle Republican (Seattle, Wash.) 1???-1915 | end_raw=1915 | dates_field=nan-nan
+    sn86071999: The Northwest Times (Seattle, Wash.) 1947-1955 | end_raw=1955 | dates_field=nan-nan
+    sn88085651: Victory Worker (Seattle, Wash.) 1942-1943 | end_raw=1943 | dates_field=nan-nan
+    sn87093448: The Republican (Seattle, Wash.) 1894-1??? | end_raw=1??? | dates_field=nan-nan
+    sn87093449: The Daily Republican (Seattle, Wash.) 18??-189? | end_raw=189? | dates_field=nan-nan
+- Daily Iowan (Iowa City) - open (control)
+    sn85049561: The Daily Iowan (Iowa City, Iowa) 1901-Current | end_raw=Current | dates_field=1901-9999
+- Pittsburgh Tribune-Review - print ended Nov 2016 (online continues)
+    sn87078597: Tribune-Review (Greensburg, Pa.) 1983-Current | end_raw=Current | dates_field=1983-9999
+    sn87078599: Tribune-Review (Greensburg, Pa.) 1965-Current | end_raw=Current | dates_field=1965-9999
+    2011218532: Pittsburgh Tribune-Review (Pittsburgh, Pa.; Greensburg, Pa; Pittsburgh, PA) 2000-Current | end_raw=Current | dates_field=2000-9999
+    sn87078596: Tribune-Review (Greensburg, Pa.) 1983-Current | end_raw=Current | dates_field=1983-9999
+    sn87078598: Tribune-Review (Greensburg, Pa.) 1983-Current | end_raw=Current | dates_field=1983-9999
+- Village Voice - print ended 2017 (later revived)
+    2023270647: The Village Voice (New York) 1955-Current [Online Resource] | end_raw=Current | dates_field=1955.0-9999.0
+    2005251005: The Village Voice (Greenwich Village, N.Y.) 1955-Current [Microfilm Reel] | end_raw=Current | dates_field=1955.0-9999.0
+    75645115: The Village Voice (Greenwich Village, N.Y.) 1955-2017 [Microfilm Reel] | end_raw=2017 | dates_field=1955.0-2017.0
+- Baltimore City Paper - closed Nov 2017
+    sn83002829: City Paper (Baltimore, Md.) 1978-2017 | end_raw=2017 | dates_field=1978.0-2017.0
+    sn90057160: Frederick Citizen (Frederick City, Md.) 1890-1895 | end_raw=1895 | dates_field=nan-nan
+    sn89060092: The Citizen (Frederick City, Md.) 1895-1923 | end_raw=1923 | dates_field=nan-nan
+- Houston Press - print ended Nov 2017
+    sn87090979: Houston Daily Press (Houston, Tex.) 1???-???? | end_raw=???? | dates_field=1000.0-9999.0
+    2015238482: Houston Press (Houston, TX) 1989-Current [Online Resource] | end_raw=Current | dates_field=1989.0-9999.0
+    sn84031354: The Houston Chronicle (Houston, Texas) 1912-Current | end_raw=Current | dates_field=1912.0-9999.0
+    sn87090319: Houston Times (Houston, Tex.) 1920-19?? | end_raw=19?? | dates_field=1920.0-1999.0
+    sn87090890: The Vet (Houston, Tex.) 1972-???? | end_raw=???? | dates_field=1972.0-9999.0
+- Tucson Citizen - print closed May 2009
+    sn84020674: The Tucson Citizen (Tucson, Ariz.) 1901-1928 | end_raw=1928 | dates_field=nan-nan
+    sn86014563: Tucson Citizen (Tucson, Ariz.) 1977-Current | end_raw=Current | dates_field=1977.0-9999.0
+    sn96060641: The Wolfville Citizen (Tucson, Ariz.) 1926-19?? | end_raw=19?? | dates_field=1926.0-1999.0
+    sn87091031: Tucson Daily Citizen (Tucson, Ariz.) 19??-???? | end_raw=???? | dates_field=1900.0-9999.0
+    sn82015133: Arizona Weekly Citizen (Tucson, Ariz) 1880-1901 | end_raw=1901 | dates_field=nan-nan
+    sn87062098: Arizona Daily Citizen (Tucson, Ariz. Territory [i.e. Ariz.]) 1884-1901 | end_raw=1901 | dates_field=nan-nan
+    sn82016240: Weekly Arizona Citizen (Tucson, Ariz.) 1880-1880 | end_raw=1880 | dates_field=nan-nan
+    sn82014896: Arizona Citizen (Tucson, Pima County, A.T. [i.e. Ariz.]) 1870-1880 | end_raw=1880 | dates_field=nan-nan
+    sn95060740: Veteran's Weekly (Tucson, Ariz.) 1926-19?? | end_raw=19?? | dates_field=1926.0-1999.0
+    sn95070521: El Fronterizo (Tucson, Ariz.) 1878-191? | end_raw=191? | dates_field=nan-nan
+    sn87062100: Arizona's Negro Journal (Tucson, Ariz.) 1942-19?? | end_raw=19?? | dates_field=nan-nan
+- Albuquerque Tribune - closed Feb 2008
+    sn83025328: The Albuquerque Tribune (Albuquerque, N.M.) 1933-19?? | end_raw=19?? | dates_field=1933.0-1999.0
+    sn84020616: Albuquerque Citizen (Albuquerque, N.M.) 1907-1909 | end_raw=1909 | dates_field=nan-nan
+    sn84020613: Albuquerque Daily Citizen (Albuquerque, N.M.) 1895-1903 | end_raw=1903 | dates_field=nan-nan
+    sn84020615: Albuquerque Evening Citizen (Albuquerque, N.M.) 1905-1907 | end_raw=1907 | dates_field=nan-nan
+    sn92070581: Albuquerque Evening Herald (Albuquerque, N.M.) 1911-1914 | end_raw=1914 | dates_field=nan-nan
+    sn92070464: Albuquerque Weekly Citizen (Albuquerque, N.M.) 1891-19?? | end_raw=19?? | dates_field=nan-nan
+    sn92070582: The Evening Herald (Albuquerque, N.M.) 1914-1922 | end_raw=1922 | dates_field=nan-nan
+- Ann Arbor News - closed Jul 2009
+    sn83016162: The Ann Arbor News (Ann Arbor, Mich.) 1937-2009 | end_raw=2009 | dates_field=1937.0-2009.0
+    sn98066069: Finally Got the News (Ann Arbor, Mich.) 1971-19?? | end_raw=19?? | dates_field=1971.0-1999.0
+    sn83009192: The Michigan Daily ([Ann Arbor, Mich.]) 1903-Current | end_raw=Current | dates_field=1903.0-9999.0
+    sn97063355: Slicker (Ann Arbor, Mich.) 1980-???? | end_raw=???? | dates_field=1980.0-9999.0

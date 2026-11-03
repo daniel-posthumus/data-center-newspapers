@@ -1,0 +1,124 @@
+lines voltage missing: 14248 of 94619
+VOLT_CLASS
+100-161          44665
+UNDER 100        30348
+NOT AVAILABLE     8822
+220-287           7305
+345               2602
+500                815
+735 AND ABOVE       46
+DC                  14
+Unknown              1
+SUB 100              1
+Name: count, dtype: int64
+AL 2119
+AK 187
+AZ 1309
+AR 966
+CA 4030
+CO 1201
+retry CT HTTP 502
+CT 273
+DE 162
+DC 40
+FL 2309
+retry GA HTTP 502
+GA 2556
+HI 281
+ID 612
+retry IL HTTP 502
+IL 2709
+IN 2254
+retry IA HTTP 502
+retry IA HTTP 502
+IA 1766
+KS 1198
+KY 1600
+retry LA HTTP 502
+retry LA HTTP 502
+retry LA HTTP 502
+LA 1317
+retry ME HTTP 502
+ME 386
+retry MD HTTP 502
+MD 785
+MA 740
+MI 2909
+MN 1843
+retry MS HTTP 502
+MS 954
+retry MO HTTP 502
+MO 1832
+MT 863
+NE 1163
+NV 578
+retry NH HTTP 502
+retry NH HTTP 502
+NH 299
+NJ 1019
+NM 860
+retry NY HTTP 502
+retry NY HTTP 502
+NY 2510
+NC 2552
+retry ND HTTP 502
+retry ND HTTP 502
+ND 1119
+retry OH HTTP 502
+retry OH HTTP 502
+retry OH HTTP 502
+OH 3191
+retry OK HTTP 502
+OK 1557
+retry OR HTTP 502
+retry OR HTTP 502
+OR 1089
+PA 2469
+retry RI HTTP 502
+retry RI HTTP 502
+RI 170
+SC 1859
+retry SD HTTP 502
+retry SD HTTP 502
+SD 790
+retry TN HTTP 502
+TN 1464
+TX 6248
+UT 932
+retry VT HTTP 502
+VT 325
+VA 1489
+WA 1538
+retry WV HTTP 502
+retry WV HTTP 502
+retry WV HTTP 502
+retry WV HTTP 504
+retry WV HTTP 502
+retry WV HTTP 502
+WV 711
+WI 1699
+retry WY HTTP 504
+WY 579
+
+==== REPORT
+HIFLD line features: 94619 (service count 94619 )
+lines VOLTAGE missing (-999999 or <=0): 14248
+US total km >=345kV: 158,873; >=230kV: 300,780
+county-summed km >=345: 158,243; >=230: 299,120
+OSM substations (dedup): 73404 in a county: 73381
+  unknown voltage: 16502  >=230kV: 6756  >=345kV: 2571
+  substation=* tag: {nan: 26437, 'distribution': 24189, 'transmission': 7302, 'industrial': 5834, 'minor_distribution': 4036, 'generation': 2142, 'switching': 1339, 'yes': 947, 'traction': 510, 'transition': 288}
+  max_kv<1 (possible kV-coded or tiny): 113
+                     count       mean  ...         75%          max
+n_subst_230kv       3143.0   2.148902  ...    2.000000    79.000000
+n_subst_all         3143.0  23.347439  ...   27.000000   557.000000
+n_subst_unknown_kv  3143.0   5.245307  ...    6.000000   222.000000
+km_lines_345kv      3143.0  50.347600  ...   63.238127  2289.901731
+km_lines_230kv      3143.0  95.170341  ...  118.817782  3441.400317
+
+[5 rows x 8 columns]
+                      count       mean  ...        75%          max
+dist_km_subst_230kv  7130.0   8.634809  ...   8.629708  3865.857052
+dist_km_line_345kv   7130.0  12.366990  ...  11.064051  3894.628042
+
+[2 rows x 8 columns]

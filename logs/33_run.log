@@ -1,0 +1,12 @@
+NBM page status: 403
+
+==== REPORT
+counties: 3143
+                        count           mean  ...           75%        max
+share_pop_100_10_terr  3143.0       0.785956  ...      0.967737        1.0
+share_pop_25_3_terr    3143.0       0.912435  ...      0.994938        1.0
+share_pop_fiber        3143.0       0.339149  ...      0.551567        1.0
+pop_477                3143.0  104833.212854  ...  68221.000000  9943046.0
+
+[4 rows x 8 columns]
+pop-weighted national: 100/10 terr 0.9397573081770043 fiber 0.4455818443094075 pop 329490788

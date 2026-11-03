@@ -1,0 +1,9 @@
+term,coef,se,p,n,spec,note,outcome,regressor,formula,cluster
+q_pc10k,-0.01171752858813872,0.1903961993999153,0.951063338564659,514,county FE + year FE,,failed,q_pc10k,failed ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year,fips
+q_pc10k,-0.18552850320629596,0.16490466306750606,0.2634880290906394,520,county FE,,failed,q_pc10k,failed ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips,fips
+q_zero,-0.0066425657010654535,0.04469976872731871,0.8821985529546401,514,county FE + year FE,,failed,q_zero,failed ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year,fips
+q_zero,-0.008395037141187629,0.05596672718517236,0.8810925830999972,520,county FE,,failed,q_zero,failed ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips,fips
+q_pc10k,-0.09263576264075993,0.7722529657133345,0.9051855927478778,193,county FE + year FE,,stalled_24,q_pc10k,stalled_24 ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year,fips
+q_pc10k,-0.16212928587250472,0.7177589233893965,0.8225358368011277,198,county FE,,stalled_24,q_pc10k,stalled_24 ~ q_pc10k + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips,fips
+q_zero,-0.11146803969282307,0.0657951852433326,0.09886952931882087,193,county FE + year FE,,stalled_24,q_zero,stalled_24 ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips + ann_year,fips
+q_zero,0.025218150123068498,0.03479854107960036,0.47320048386267777,198,county FE,,stalled_24,q_zero,stalled_24 ~ q_zero + log_mw_f + mw_miss + ai + btm + prov_pub + prov_pub_miss | fips,fips

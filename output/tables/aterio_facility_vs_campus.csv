@@ -1,0 +1,8 @@
+metric,value
+US facilities,7132.0
+US campuses,2425.0
+campuses with 1 building,1524.0
+campuses with 2-5,577.0
+campuses with 6+,324.0
+max buildings in a campus,60.0
+mean buildings per campus,2.941

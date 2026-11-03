@@ -1,0 +1,155 @@
+Raw rows: 7544  columns: 73
+Rows by country:
+COUNTRY_CODE
+US    7132
+CA     412
+
+Facility rows by stage x country:
+COUNTRY_CODE             CA    US  total
+DATA_CENTER_STAGE                       
+Announcement            200  3631   3831
+Active                  194  2026   2220
+Construction             14   766    780
+Not Approved/Withdrawn    2   552    554
+Delayed                   2    84     86
+Land Bank                 0    54     54
+Cancelled                 0    19     19
+Total                   412  7132   7544
+
+US facility rows: 7132  (Canada dropped: 412)
+US facilities with missing campus UID: 1425
+US campuses (campus UID, singletons for missing): 2425
+                   metric    value
+            US facilities 7132.000
+              US campuses 2425.000
+ campuses with 1 building 1524.000
+        campuses with 2-5  577.000
+         campuses with 6+  324.000
+max buildings in a campus   60.000
+mean buildings per campus    2.941
+
+Missingness (US facilities):
+                              field  n_missing  pct_missing                                           note
+             ATERIO_DATA_CENTER_UID          0     0.000000                                               
+      ATERIO_DATA_CENTER_CAMPUS_UID       1425    19.980370                                               
+                  DATA_CENTER_STAGE          0     0.000000                                               
+       PROJECT_EXECUTION_LIKELIHOOD       1950    27.341559                                               
+                    FLG_AI_FACILITY       5491    76.991026 blank = not flagged (values are Y / N / blank)
+    FLG_BTM_ONSITE_POWER_GENERATION       6027    84.506450 blank = not flagged (values are Y / N / blank)
+                      PROVIDER_NAME          0     0.000000                                               
+            PROVIDER_PUBLIC_PRIVATE         13     0.182277                                               
+                 END_USER_COMPANIES       6664    93.438026                                               
+                   COUNTY_FIPS_CODE        133     1.864835                                               
+                    PLACE_FIPS_CODE        631     8.847448                                               
+                  LOCATION_LATITUDE          1     0.014021                                               
+                 LOCATION_LONGITUDE          2     0.028043                                               
+     PROV_PUB_TOT_POWER_CAPACITY_MW       3612    50.644980                                               
+   ATERIO_EST_TOT_POWER_CAPACITY_MW       1808    25.350533                                               
+         SELECTED_POWER_CAPACITY_MW        609     8.538979                                               
+         DATA_CENTER_ANNOUNCED_DATE       2140    30.005609                                               
+         DATA_CENTER_CANCELLED_DATE       7104    99.607403    expected missing unless cancelled/withdrawn
+ DATA_CENTER_PROJECT_WITHDRAWN_DATE       6601    92.554683    expected missing unless cancelled/withdrawn
+DATA_CENTER_CONSTRUCTION_START_DATE       5363    75.196298                                               
+        DATA_CENTER_ACTIVATION_DATE        358     5.019630                                               
+                RECORD_CREATED_DATE          0     0.000000                                               
+                RECORD_UPDATED_DATE          0     0.000000                                               
+                       UTILITY_CODE       2661    37.310712                                               
+                       UTILITY_NAME       2646    37.100393                                               
+                      BAL_AUTH_ABBR       1250    17.526640                                               
+                 PROJECT_PERMIT_URL       4620    64.778463                                               
+                      DATASHEET_URL        645     9.043746                                               
+                              NOTES       1219    17.091980                                               
+
+FLG_AI_FACILITY values:
+FLG_AI_FACILITY
+NaN    5491
+Y      1637
+N         4
+FLG_BTM values:
+FLG_BTM_ONSITE_POWER_GENERATION
+NaN    6027
+Y      1105
+
+Date ranges (US):
+                                 field  n_nonmissing        min        max
+            DATA_CENTER_ANNOUNCED_DATE          4992 2002-06-30 2026-06-24
+            DATA_CENTER_CANCELLED_DATE            28 2024-01-12 2026-03-06
+    DATA_CENTER_PROJECT_WITHDRAWN_DATE           531 2022-11-30 2026-06-23
+   DATA_CENTER_CONSTRUCTION_START_DATE          1769 1999-02-28 2030-06-30
+         LATEST_SATELLITE_PICTURE_DATE          4923 2024-10-04 2026-06-27
+DATA_CENTER_CONSTRUCTION_FINISHED_DATE           423 2000-02-01 2034-02-15
+           DATA_CENTER_ACTIVATION_DATE          6774 2000-01-01 2048-06-30
+                   RECORD_CREATED_DATE          7132 2024-07-01 2026-06-26
+                   RECORD_UPDATED_DATE          7132 2025-08-27 2026-06-29
+                            UPDATED_AT          7132 2026-06-30 2026-06-30
+
+Announced year (US facilities):
+announced_year  n_facilities
+          2002             1
+          2009             1
+          2010             1
+          2011             6
+          2012             1
+          2013             1
+          2014             1
+          2015             7
+          2016            20
+          2017            26
+          2018            30
+          2019            29
+          2020            34
+          2021            91
+          2022           155
+          2023           357
+          2024          1051
+          2025          2224
+          2026           956
+           NaN          2140
+
+Provider-name variants matching non-disclosure pattern:
+PROVIDER_NAME
+Company Not Disclosed    1349
+Missing PROVIDER_NAME: 0
+                                             metric       value
+US facilities 'Company Not Disclosed' (any variant) 1349.000000
+                                              share    0.189148
+           US facilities with no END_USER_COMPANIES 6664.000000
+                                              share    0.934380
+
+Undisclosed by stage:
+undisclosed                0     1   All
+DATA_CENTER_STAGE                       
+Active                  2019     7  2026
+Announcement            2551  1080  3631
+Cancelled                 19     0    19
+Construction             746    20   766
+Delayed                   42    42    84
+Land Bank                 51     3    54
+Not Approved/Withdrawn   355   197   552
+All                     5783  1349  7132
+PROJECT_PERMIT_URL populated: 2512 of 7132 (35.2%)
+DATASHEET_URL populated: 6487 of 7132 (91.0%)
+
+Within-campus heterogeneity (number of campuses):
+     attribute  campuses_with_>1_distinct_value
+   county FIPS                                6
+         stage                              276
+      provider                                2
+announced date                               65
+
+SELECTED_POWER_CAPACITY_MW describe:
+count    6523.000000
+mean       71.798972
+std        66.651688
+min         0.015000
+25%        32.650000
+50%        60.000000
+75%        90.000000
+max       900.000000
+
+Feb-2026 snapshot rows: 5870; unique UIDs: 5870
+Feb vs Jun UID match:
+_merge
+both          5767
+left_only     1365
+right_only     103

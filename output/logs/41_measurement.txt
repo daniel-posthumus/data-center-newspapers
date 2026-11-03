@@ -1,0 +1,134 @@
+A1:
+                                                                    measure      value                             source / note
+                  Medill 2025 report: counties with zero local news sources        212 report text p.6/p.16 (press release: 213)
+                    Medill 2025 report: counties with one local news source       1525   report text p.16 (press release: 1,524)
+                     Medill 2025: share of news deserts predominantly rural almost 80%                               report p.17
+                QCEW 2025: counties with 0 private newspaper establishments        816                                this study
+                                         QCEW 2025: counties with exactly 1       1267                                this study
+             QCEW 2025: share of zero counties that are nonmetro (RUCC 4-9)      0.723                                this study
+           QCEW 2025: zero counties with >=1 full-power TV station licensed         58                                  FCC CDBS
+                 QCEW 2025: zero counties with >=1 full-power radio station        609                                  FCC CDBS
+       CBP 2016 (last uncensored): counties with 0 newspaper establishments        554                                this study
+                                  CBP 2016: share of zero counties nonmetro      0.758                                this study
+                                                 QCEW 2016: counties with 0        484                                this study
+CBP 2023: counties with no published 511110 cell (0, 1 or 2 establishments)       2580                            CBP censors <3
+                                 CBP 2023: counties with >=3 establishments        555                                this study
+A1 QCEW-zero counties by state, 2025 (top 15):
+st  counties  qcew_zero  qcew_one  share_zero
+TX       254         97        99    0.381890
+GA       159         75        56    0.471698
+VA       133         64        48    0.481203
+IL       102         40        29    0.392157
+KS       105         35        48    0.333333
+AR        75         32        30    0.426667
+MO       115         31        53    0.269565
+NE        93         28        43    0.301075
+OK        77         22        31    0.285714
+MT        56         22        24    0.392857
+CO        64         21        20    0.328125
+TN        95         21        48    0.221053
+MI        83         20        31    0.240964
+IN        92         19        40    0.206522
+KY       120         19        74    0.158333
+A2 by year (QCEW; CBP through 2016):
+      q_decl  q_1to0  q_0to1  c_decl  c_1to0
+year                                        
+2006   285.0    17.0    16.0   295.0    32.0
+2007   298.0    21.0     8.0   343.0    48.0
+2008   289.0    19.0    21.0   486.0    57.0
+2009   358.0    28.0    12.0   366.0    46.0
+2010   294.0    18.0    12.0   298.0    27.0
+2011   290.0    28.0    11.0   251.0    20.0
+2012   267.0    33.0    13.0   368.0    39.0
+2013   273.0    20.0     6.0   271.0    25.0
+2014   273.0    32.0     8.0   258.0    30.0
+2015   261.0    29.0    20.0   308.0    39.0
+2016   259.0    31.0    13.0   246.0    39.0
+2017   304.0    38.0    17.0     NaN     NaN
+2018   336.0    45.0    19.0     NaN     NaN
+2019   297.0    32.0    18.0     NaN     NaN
+2020   279.0    50.0    13.0     NaN     NaN
+2021   295.0    53.0    21.0     NaN     NaN
+2022   223.0    54.0    39.0     NaN     NaN
+2023   322.0    81.0    24.0     NaN     NaN
+2024   364.0    95.0    27.0     NaN     NaN
+2025   360.0    82.0    19.0     NaN     NaN
+A2 by rurality (sums over 2006-2025; CBP 2006-2016):
+                          counties  q_decl  q_1to0  c_decl  c_1to0  q_decl_per_county  q_1to0_per_county
+rural_grp                                                                                               
+metro (1-3)                   1186  3649.0   258.0  2036.0    95.0           3.076728           0.217538
+nonmetro adj/urban (4-7)       902  1343.0   188.0   828.0    72.0           1.488914           0.208426
+rural (8-9)                   1055   935.0   360.0   626.0   235.0           0.886256           0.341232
+Prior establishment count at decline events:
+index  q_est_t-1_at_decline
+count           5927.000000
+ mean              7.124848
+  std             11.908079
+  min              0.687674
+  25%              2.000000
+  50%              3.000000
+  75%              7.000000
+  90%             16.000000
+  max            174.000000
+A4 missingness by 2025 QCEW per-capita quartile (all campuses):
+ q_pcq_2025  campuses  share_no_ann_date  share_undisclosed  share_mw_missing  share_no_end_user  share_permit_url
+          1       221           0.271493           0.221719          0.140271           0.932127          0.361991
+          2      1803           0.618968           0.104825          0.111481           0.958957          0.183028
+          3       324           0.484568           0.172840          0.145062           0.950617          0.222222
+          4        75           0.320000           0.106667          0.173333           0.880000          0.386667
+A4 missingness by 2025 QCEW group:
+q_grp_2025  campuses  share_no_ann_date  share_undisclosed  share_mw_missing  share_no_end_user  share_permit_url
+         0       221           0.271493           0.221719          0.140271           0.932127          0.361991
+         1       271           0.217712           0.232472          0.151292           0.915129          0.343173
+        2+      1931           0.641119           0.098395          0.113931           0.960642          0.175039
+A4 failed share among DATED campuses by 2025 group:
+q_grp_2025  dated_campuses  failed  failed_share
+         0             161      17      0.105590
+         1             212      13      0.061321
+        2+             693      57      0.082251
+by announcement-year quartile:
+ q  dated_campuses  failed  failed_share
+ 1             213      17      0.079812
+ 2             639      56      0.087637
+ 3             161      11      0.068323
+ 4              52       3      0.057692
+A4 failed vs active by group:
+stage3      active  failed  other  failed_per_100_active
+q_grp_2025                                              
+0               46      19    156              41.304348
+1               66      15    190              22.727273
+2+            1268      74    589               5.835962
+by quartile:
+stage3      active  failed  other  failed_per_100_active
+q_pcq_2025                                              
+1               46      19    156              41.304348
+2             1143      71    589               6.211724
+3              166      13    145               7.831325
+4               25       5     45              20.000000
+A4 lag sample: dated campuses 1065, announced on/after 2024-07-01: 765
+detection lag (months) by announced before/after inception:
+                count       mean        std        min        25%        50%        75%         max
+post_inception                                                                                     
+0               300.0  28.877864  29.640054   0.131417  10.776181  18.365503  35.252567  176.525667
+1               765.0   1.758838   4.112283 -23.523614   0.065708   0.262834   1.839836   21.322382
+A4 detection-lag regressions:
+   term      coef       se        p    n                  sample                            spec      outcome
+q_pc10k  0.321537 0.437280 0.462552  765 announced >= 2024-07-01                       bivariate detect_lag_m
+q_pc10k  0.296621 0.413659 0.473722  765 announced >= 2024-07-01                        controls detect_lag_m
+q_pc10k -0.247846 0.341521 0.468412  762 announced >= 2024-07-01 controls + state FE + ann-month detect_lag_m
+ q_zero  0.564040 0.498845 0.258815  765 announced >= 2024-07-01                       bivariate detect_lag_m
+ q_zero  0.075216 0.451925 0.867893  765 announced >= 2024-07-01                        controls detect_lag_m
+ q_zero  0.194573 0.392765 0.620577  762 announced >= 2024-07-01 controls + state FE + ann-month detect_lag_m
+q_pc10k -0.333094 1.740115 0.848279 1065               all dated                       bivariate detect_lag_m
+q_pc10k  2.337569 1.830835 0.202314 1065               all dated                        controls detect_lag_m
+q_pc10k -0.115619 0.364487 0.751228 1029               all dated controls + state FE + ann-month detect_lag_m
+ q_zero -3.621419 1.436288 0.012021 1065               all dated                       bivariate detect_lag_m
+ q_zero -3.461360 1.434272 0.016191 1065               all dated                        controls detect_lag_m
+ q_zero  0.049349 0.420071 0.906532 1029               all dated controls + state FE + ann-month detect_lag_m
+Facilities not in Feb-2026 snapshot: 1365; of which announced before 2026: 456
+A4 late-added (announced <2026, absent from Feb 2026 snapshot) by 2025 quartile:
+ q_pcq  facilities  late_added  share_late_added
+   1.0         765          53          0.069281
+   2.0        2298         242          0.105309
+   3.0         686         118          0.172012
+   4.0         287          43          0.149826

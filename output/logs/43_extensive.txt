@@ -1,0 +1,123 @@
+panel rows 53431, counties 3143, years 2010-2026
+counties with no announcement in any year 2010-2026: 2674 of 3143 (0.851); county-years with >=1 announcement: 716
+common sample (non-missing controls): 51663 county-years, 3039 counties (dropped 104 counties for missing controls)
+
+C n_ann (pois) on q_pc10k_l1:
+      term       (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_pc10k_l1 -2.1551*** (0.3628)        -0.4399* (0.2445)  -0.2130 (0.1776)    -0.1085 (0.1487)                -0.0674 (0.1634)
+         N               51663                    45585             45585               15714                            2953
+
+C n_ann (pois) on q_zero_l1:
+     term    (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_zero_l1 -0.3010 (0.2389)         -0.0376 (0.1852)   0.1352 (0.1563)    -0.0630 (0.1613)                -0.1960 (0.2526)
+        N            51663                    45585             45585               15714                            2953
+
+C any_ann (ols) on q_pc10k_l1:
+      term       (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_pc10k_l1 -0.0048*** (0.0010)          0.0006 (0.0004) 0.0012** (0.0005)  0.0015*** (0.0005)              0.0030*** (0.0011)
+         N               51663                    51663             51663               51663                           51663
+
+C any_ann (ols) on q_zero_l1:
+     term     (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_zero_l1 -0.0041* (0.0021)         -0.0029 (0.0021)  -0.0021 (0.0023)   -0.0039* (0.0021)              -0.0091** (0.0043)
+        N             51663                    51663             51663               51663                           51663
+
+C mw_ann (pois) on q_pc10k_l1:
+      term      (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_pc10k_l1 -1.0311** (0.4735)         -0.2089 (0.2472)  -0.0809 (0.2238)     0.1212 (0.1453)               0.3215** (0.1575)
+         N              51663                    45585             45585               15157                            2541
+
+C mw_ann (pois) on q_zero_l1:
+     term   (1) bivariate (2) +demog+RUCC, year FE (3) +fundamentals (4) state x year FE (5) county FE + state x year FE
+q_zero_l1 0.0150 (0.2394)         -0.1394 (0.3040)   0.0328 (0.2992)    -0.3506 (0.3030)               -0.6142* (0.3239)
+        N           51663                    45585             45585               15157                            2541
+C5 within-county variation:
+                                                     metric       value
+                                         counties in sample 3039.000000
+                             counties with >=1 announcement  458.000000
+                counties whose q_zero_l1 switches 2010-2026  689.000000
+                         ... of which with >=1 announcement   66.000000
+                median within-county SD of q_pc10k_l1 (all)    0.085489
+median within-county SD of q_pc10k_l1 (announcing counties)    0.047751
+Heterogeneity (PPML; interaction terms show difference for type=1 / post-2021):
+     het  regressor                                       spec                term       coef       se            p     n
+    mw50 q_pc10k_l1                 (4) state x year x type FE          q_pc10k_l1  -0.895583 0.286079 1.744843e-03 20983
+    mw50 q_pc10k_l1                 (4) state x year x type FE      q_pc10k_l1:typ   0.849963 0.270934 1.705971e-03 20983
+    mw50 q_pc10k_l1 (5) county x type + state x year x type FE          q_pc10k_l1  -4.495406 7.402960 5.436887e-01  2526
+    mw50 q_pc10k_l1 (5) county x type + state x year x type FE      q_pc10k_l1:typ   4.558955 7.384803 5.370086e-01  2526
+    mw50  q_zero_l1                 (4) state x year x type FE           q_zero_l1  -0.623979 0.396161 1.152413e-01 20983
+    mw50  q_zero_l1                 (4) state x year x type FE       q_zero_l1:typ   0.677657 0.370304 6.724970e-02 20983
+    mw50  q_zero_l1 (5) county x type + state x year x type FE           q_zero_l1  12.842015      NaN          NaN  2526
+    mw50  q_zero_l1 (5) county x type + state x year x type FE       q_zero_l1:typ -12.916574 0.265367 0.000000e+00  2526
+      ai q_pc10k_l1                 (4) state x year x type FE          q_pc10k_l1  -0.199593 0.141119 1.572571e-01 22894
+      ai q_pc10k_l1                 (4) state x year x type FE      q_pc10k_l1:typ   0.263377 0.261078 3.130671e-01 22894
+      ai q_pc10k_l1 (5) county x type + state x year x type FE          q_pc10k_l1  -0.222194 0.240453 3.554525e-01  2909
+      ai q_pc10k_l1 (5) county x type + state x year x type FE      q_pc10k_l1:typ   0.306393 0.304776 3.147484e-01  2909
+      ai  q_zero_l1                 (4) state x year x type FE           q_zero_l1  -0.179067 0.167042 2.837245e-01 22894
+      ai  q_zero_l1                 (4) state x year x type FE       q_zero_l1:typ   0.506279 0.222194 2.269407e-02 22894
+      ai  q_zero_l1 (5) county x type + state x year x type FE           q_zero_l1  -0.028683 0.297561 9.232080e-01  2909
+      ai  q_zero_l1 (5) county x type + state x year x type FE       q_zero_l1:typ  -1.556852 1.153949 1.772883e-01  2909
+     btm q_pc10k_l1                 (4) state x year x type FE          q_pc10k_l1  -0.305735 0.157063 5.158543e-02 19863
+     btm q_pc10k_l1                 (4) state x year x type FE      q_pc10k_l1:typ   0.688413 0.140495 9.588519e-07 19863
+     btm q_pc10k_l1 (5) county x type + state x year x type FE          q_pc10k_l1  -0.135524 0.168036 4.199450e-01  2843
+     btm q_pc10k_l1 (5) county x type + state x year x type FE      q_pc10k_l1:typ   0.402134 0.171767 1.922352e-02  2843
+     btm  q_zero_l1                 (4) state x year x type FE           q_zero_l1  -0.128852 0.190158 4.980205e-01 19863
+     btm  q_zero_l1                 (4) state x year x type FE       q_zero_l1:typ   0.538396 0.364783 1.399606e-01 19863
+     btm  q_zero_l1 (5) county x type + state x year x type FE           q_zero_l1  -0.245593 0.259587 3.441032e-01  2843
+     btm  q_zero_l1 (5) county x type + state x year x type FE       q_zero_l1:typ   0.215003 0.508102 6.721871e-01  2843
+post2021 q_pc10k_l1                        (4) state x year FE          q_pc10k_l1  -1.383560 0.705408 4.983691e-02 15714
+post2021 q_pc10k_l1                        (4) state x year FE q_pc10k_l1:post2021   1.322746 0.764010 8.339488e-02 15714
+post2021 q_pc10k_l1            (5) county FE + state x year FE          q_pc10k_l1  -1.471312 0.837961 7.911827e-02  2953
+post2021 q_pc10k_l1            (5) county FE + state x year FE q_pc10k_l1:post2021   1.604062 0.938169 8.730673e-02  2953
+post2021  q_zero_l1                        (4) state x year FE           q_zero_l1  -1.254236 0.809525 1.212981e-01 15714
+post2021  q_zero_l1                        (4) state x year FE  q_zero_l1:post2021   1.229030 0.774024 1.123213e-01 15714
+post2021  q_zero_l1            (5) county FE + state x year FE           q_zero_l1  -1.447063 0.914748 1.136667e-01  2953
+post2021  q_zero_l1            (5) county FE + state x year FE  q_zero_l1:post2021   1.293986 0.846178 1.262115e-01  2953
+
+Event study [decline] cohorts:
+ cohort  treated_counties  matched_treated  controls  trt_cy_ann  trt_cty_ann
+   2008               200              200      1058           1            1
+   2009               194              194      1127           0            0
+   2010               160              160       883           0            0
+   2011               155              155       892           0            0
+   2012               154              154      1094           0            0
+   2013               151              151      1027           0            0
+   2014               149              149       948           2            2
+   2015               147              147      1159           1            1
+   2016               155              155       942           4            4
+   2017               184              184      1105           0            0
+   2018               209              209      1201           7            6
+   2019               182              182      1228           3            2
+   2020               183              183      1097           7            7
+   2021               167              167      1145          20           13
+   2022               160              160      1129          26           24
+   2023               227              227      1310          74           41
+Event study [decline] (LPM any_ann; ref k=-1):
+term      coef       se        p      n  k  trt_cy_ann
+ev_0 -0.001461 0.001094 0.187723 122809 -3         145
+ev_1  0.000403 0.001074 0.709147 122809 -2         145
+ ref  0.000000 0.000000      NaN 122809 -1         145
+ev_3  0.001928 0.001138 0.096678 122809  0         145
+ev_4  0.004637 0.001721 0.009629 122809  1         145
+ev_5  0.006775 0.002021 0.001550 122809  2         145
+ev_6  0.010920 0.002974 0.000595 122809  3         145
+
+Event study [1to0] cohorts:
+ cohort  treated_counties  matched_treated  controls  trt_cy_ann  trt_cty_ann
+   2008                19               19       701           0            0
+   2009                28               28       821           0            0
+   2010                18               18       583           0            0
+   2011                28               28       622           0            0
+   2012                33               33       860           0            0
+   2013                20               20       783           0            0
+   2014                31               31       830           0            0
+   2015                29               29       935           0            0
+   2016                30               30       735           1            1
+   2017                37               37       926           0            0
+   2018                45               45      1047           0            0
+   2019                32               32      1067           0            0
+   2020                50               50      1017           0            0
+   2021                52               52      1116           1            1
+   2022                54               54      1088           1            1
+   2023                80               80      1216          20           10
+Event study [1to0]: only 23 treated county-years with an announcement -> NOT ESTIMATED (too few treated cells to say anything).
