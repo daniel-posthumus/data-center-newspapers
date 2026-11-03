@@ -1,1 +1,1 @@
-# data-center-newsppaers
+# data-center-newspapers
